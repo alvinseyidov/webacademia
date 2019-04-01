@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}<title>coursefromcategory</title>{% endblock %}
+</head>
+<body>
+    {% block content%}
+        {% for course in courses %}
+
+                <p>{{ course.title }}</p>
+
+        {% endfor %}
+    {% endblock %}
+</body>
+</html>

@@ -1,6 +1,8 @@
+
 from django.db import models
-from django.utils.text import slugify
 from django.urls import reverse
+from django.utils.text import slugify
+from django.contrib.auth.models import User
 
 
 class Category(models.Model):
@@ -10,6 +12,8 @@ class Category(models.Model):
     def __str__(self):
         return self.name
 
+    def get_absolute_url(self):
+        return reverse('coursefrom_category', args=[str(self.slug)])
 
     def get_unique_slug(self):
         slug = slugify(
@@ -29,9 +33,10 @@ class Category(models.Model):
 
 class Course(models.Model):
     title = models.CharField(max_length=100, blank=False)
-    # tutor = models.ForeignKey()
+    #tutor = models.ForeignKey(User, on_delete=models.DO_NOTHING)
     category = models.ManyToManyField(Category)
     publish_date = models.DateTimeField(auto_now_add=True)
+    #purchased = models.PositiveIntegerField(default=0, editable=False)
     slug = models.SlugField(unique=True, editable=False, max_length=120)
 
     def __str__(self):

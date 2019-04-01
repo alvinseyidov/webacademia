@@ -1,10 +1,13 @@
+{% extends 'base.html' %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CoursesList</title>
+    {% block title %}<title>CoursesList</title>{% endblock %}
 </head>
 <body>
-    <p>courses_list</p>
+    {% block content %}
+        <p>courses_list</p>
+    {% endblock %}
 </body>
 </html>
