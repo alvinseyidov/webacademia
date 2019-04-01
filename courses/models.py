@@ -22,7 +22,7 @@ class Category(models.Model):
         counter = 1
         while Category.objects.filter(slug=unique_slug).exists():
             unique_slug = '{}-{}'.format(slug, counter)
-            counter = 1
+            counter += 1
         return unique_slug
 
     def save(self, *args, **kwargs):
