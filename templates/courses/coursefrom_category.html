@@ -9,7 +9,7 @@
     {% block content%}
         {% for course in courses %}
             {% if course.category.slug == category.slug %}
-                <a href="{{ course.get_absolute_url }}">{{ course.title }}({{ course.purchased }} students)</a> <br>
+                <a href="{{ course.get_absolute_url }}">{{ course.title }}</a> <br>
                 <a href="{{ course.category.get_absolute_url }}">{{ course.category }}</a> <br>
                 <!-- <h5>Published: {{ course.publish_date | time}}</h5> <br> -->
                 <h5>Teacher: {{ course.teacher }}</h5> <br>
