@@ -7,7 +7,14 @@
 </head>
 <body>
     {% block content %}
-        <p>courses_list</p>
+        {% for course in courses %}
+            <a href="{{ course.get_absolute_url }}">{{ course.title }}({{ course.purchased }} students)</a> <br>
+            <a href="{{ course.category.get_absolute_url }}">{{ course.category }}</a> <br>
+            <!-- <h5>Published: {{ course.publish_date | time}}</h5> <br> -->
+            <h5>Teacher: {{ course.teacher }}</h5> <br>
+
+        {% endfor %}
+
     {% endblock %}
 </body>
 </html>
