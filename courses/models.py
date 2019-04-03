@@ -32,6 +32,7 @@ class Course(models.Model):
     title = models.CharField(max_length=100, blank=False)
     teacher = models.ForeignKey(User, default=1, on_delete=models.DO_NOTHING)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
+    video = models.FileField(upload_to='videos/', null=True, blank=False)
     publish_date = models.DateTimeField(auto_now_add=True)
     purchased = models.PositiveIntegerField(default=0)
     slug = models.SlugField(unique=True, editable=False, max_length=120)
