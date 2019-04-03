@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7eb7b47-9baf-419d-a0a8-719bf84dce67" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/courses/migrations/0006_course_video.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/migrations/0007_auto_20190404_0207.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/courses/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/courses/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/courses/course_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/courses/course_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webacademia/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/webacademia/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webacademia/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/webacademia/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/courses/courses_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/courses/courses_list.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,34 +47,36 @@
     <session id="1519008135">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.46" value="1" />
           <entry key="project.open.time.52" value="1" />
           <entry key="project.open.time.55" value="1" />
           <entry key="project.open.time.64" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.83" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.open.time.87" value="1" />
+          <entry key="project.open.time.91" value="1" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CommandLine" value="175" />
-          <entry key="HTML" value="1335" />
+          <entry key="CommandLine" value="197" />
+          <entry key="HTML" value="1466" />
           <entry key="PLAIN_TEXT" value="37" />
-          <entry key="Python" value="2262" />
+          <entry key="Python" value="2350" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="25" />
-          <entry key="Python" value="32" />
+          <entry key="HTML" value="27" />
+          <entry key="Python" value="34" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -103,11 +104,11 @@
         <option value="$PROJECT_DIR$/courses/urls.py" />
         <option value="$PROJECT_DIR$/courses/views.py" />
         <option value="$PROJECT_DIR$/templates/base.html" />
-        <option value="$PROJECT_DIR$/templates/courses/courses_list.html" />
         <option value="$PROJECT_DIR$/templates/courses/coursefrom_category.html" />
         <option value="$PROJECT_DIR$/webacademia/urls.py" />
         <option value="$PROJECT_DIR$/webacademia/settings.py" />
         <option value="$PROJECT_DIR$/courses/models.py" />
+        <option value="$PROJECT_DIR$/templates/courses/courses_list.html" />
         <option value="$PROJECT_DIR$/templates/courses/course_detail.html" />
       </list>
     </option>
@@ -118,7 +119,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="71" />
     <option name="y" value="70" />
     <option name="width" value="1346" />
@@ -146,7 +147,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Course" />
       <pane id="ProjectPane">
         <subPane>
@@ -159,6 +159,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -220,9 +221,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26928896" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27760968" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -234,7 +235,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="manage.py@webacademia" order="9" weight="0.42096773" />
+      <window_info active="true" anchor="bottom" id="manage.py@webacademia" order="9" weight="0.42096773" />
       <window_info anchor="bottom" id="Database Changes" order="10" weight="0.32903227" />
       <window_info anchor="bottom" id="Educational.CheckDetails" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.3435484" />
@@ -348,9 +349,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="e#635#667#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -358,9 +356,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="79">
           <caret line="6" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#1#55#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -374,24 +369,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/courses/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="34" column="72" selection-start-line="34" selection-start-column="72" selection-end-line="34" selection-end-column="72" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/home/models.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/courses/course_detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="66" selection-start-line="12" selection-start-column="66" selection-end-line="12" selection-end-column="66" />
+        <state relative-caret-position="238">
+          <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/courses/courses_list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="91" selection-start-line="11" selection-start-column="91" selection-end-line="11" selection-end-column="91" />
+          <caret line="11" column="90" selection-start-line="11" selection-start-column="90" selection-end-line="11" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courses/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
         </state>
       </provider>
     </entry>
