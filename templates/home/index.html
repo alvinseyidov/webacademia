@@ -1,13 +1,671 @@
-{% extends 'base.html' %}
-<!DOCTYPE html>
+{% load static %}
+<!doctype html>
 <html lang="en">
+
+<!-- Mirrored from banyanthemes.com/template/courcity/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Apr 2019 16:24:44 GMT -->
 <head>
-    <meta charset="UTF-8">
-    {% block title %}<title>Home</title>{% endblock %}
+    <title>Home | Webacademia</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon icon -->
+    <!-- <link rel="shortcut icon" type="image/png" href="images/favicon.png"/> -->
+
+    <!-- Bootstrap -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <!-- Fontawsome -->
+    <link href="{% static 'fonts/css/fontawesome-all.min.css' %}" rel="stylesheet">
+    <!-- Animate CSS-->
+    <link href="{% static 'css/animate.css' %}" rel="stylesheet">
+    <!-- menu CSS-->
+    <link href="{% static 'css/bootstrap-4-navbar.css' %}" rel="stylesheet">
+    <!-- menu CSS-->
+    <link href="{% static 'slick/slick.css' %}" rel="stylesheet">
+    <!-- Lightbox Gallery -->
+    <link href="{% static 'inc/lightbox/css/jquery.fancybox.css' %}" rel="stylesheet">
+    <!-- Preloader CSS-->
+    <link href="{% static 'css/fakeLoader.css' %}" rel="stylesheet">
+    <!-- Video popup CSS-->
+    <link href="{% static 'css/magnific-popup.css' %}" rel="stylesheet">
+    <!-- Main CSS -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <!-- Color CSS -->
+    <link rel="stylesheet" href="{% static 'color/color-switcher.css' %}">
+    <!-- Responsive CSS -->
+    <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+
 </head>
 <body>
-    {% block content %}
-        <p>Homepage</p>
-    {% endblock %}
+
+<!-- Preloader -->
+<div id="fakeloader"></div>
+
+<div class="alertbox-1x">
+    <div class="alert alert-dismissible fade show" role="alert">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Unlimited online course & video tutorials downloads!<strong>Get 30% off</strong></p>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="main-menu-1x">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="main-menu">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light btco-hover-menu">
+                        <a class="navbar-brand" href="#">
+                            <img src="{% static 'images/logo.png' %}" class="d-inline-block align-top" alt="">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                            <ul class="navbar-nav ml-auto main-menu-nav">
+
+                                <li class="nav-item dropdown active">
+                                    <a class="nav-link" href="{% url 'home' %}" id="navbarDropdownMenuLink1"
+                                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Home <span class="sr-only">(current)</span>
+                                    </a>
+
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about-us.html">About Us</a>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="{% url 'courses' %}" id="navbarDropdownMenuLink2"
+                                       aria-haspopup="true" aria-expanded="false">
+                                        Courses
+                                    </a>
+
+                                </li>
+
+                                <!--
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="blog.html" id="navbarDropdownMenuLink4"
+                                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Blog
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink4">
+                                        <li><a class="dropdown-item" href="blog.html">Grid View</a></li>
+                                        <li><a class="dropdown-item" href="blog-list.html">List View</a></li>
+                                        <li><a class="dropdown-item" href="blog-single.html">Blog Single</a></li>
+                                    </ul>
+                                </li>
+                                -->
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact-us.html">Contact Us</a>
+                                </li>
+
+                                <li class="nav-item sign-in">
+                                    <a class="nav-link" href="sign-in.html">Sign in</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="btn-small" href="#">Get Started</a>
+                                </li>
+
+
+                            </ul>
+
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="main-banner">
+    <div class="hvrbox">
+        <img src="{% static 'images/banner-1.png' %}" alt="Mountains" class="hvrbox-layer_bottom">
+        <div class="hvrbox-layer_top">
+            <div class="container">
+                <div class="overlay-text text-center">
+                    <h3>The Future Begins Here!</h3>
+                    <p>Working collaboratively to ensure every student achieves academically,<br> socially, and
+                        emotionally.</p>
+                    <div class="col-md-8 offset-md-2">
+                        <div class="input-group">
+                            <input type="text" class="form-control" aria-label="Text input with dropdown button"
+                                   placeholder="Enter Your Search Here">
+                            <div class="input-group-append styleSelect">
+                                <select id="inputGroupSelect01">
+                                    <option selected>All Categories</option>
+                                    {% for category in categories %}
+
+                                        <option value="2">{{ category.name }}</option>
+
+                                    {% endfor %}
+                                </select>
+                            </div>
+                            <div class="input-group-append">
+                                <button class="btn btn-search" type="button"><img src="{% static 'images/search.png' %}"
+                                                                                  alt="Image">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slider-feature">
+                        <ul>
+                            <li><img src="{% static 'images/book.png' %}" alt="Mountains"> 2502 Courses</li>
+                            <li><img src="{% static 'images/cap.png' %}" alt="Mountains"> 32052 Students</li>
+                            <li><img src="{% static 'images/man.png' %}" alt="Mountains"> 459 Teachers</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="course-category-1x">
+    <div class="container">
+        <div class="row">
+            {% for category in categories|slice:":1" %}
+                <div class="col-md-6">
+                    <div class="category-left left-image">
+                        <div class="hvrbox">
+                            <img src="{{ category.thumbnail.url }}" alt="slide 1" class="hvrbox-layer_bottom">
+                            <div class="hvrbox-layer_top">
+                                <div class="hvrbox-text">
+                                    <a href="{{ category.get_absolute_url }}">{{ category.name }}</a>
+                                    <h5>800 Course</h5>
+                                    <a href="{{ category.get_absolute_url }}" class="btn-small">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+
+            <div class="col-md-6">
+                <div class="row">
+                    {% for category in categories|slice:"1:5" %}
+                        <div class="col-md-6">
+                            <div class="category-left right-image">
+                                <div class="hvrbox">
+                                    <img src="{{ category.thumbnail.url }}" alt="slide 1" class="hvrbox-layer_bottom">
+                                    <div class="hvrbox-layer_top hvrbox-text">
+                                        <div class="hvrbox-text">
+                                            <a href="{{ category.get_absolute_url }}">{{ category.name }}</a>
+                                            <h5>700 Course</h5>
+                                            <a href="{{ category.get_absolute_url }}" class="btn-small">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="category-feature">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="single-feature">
+                                <img src="{% static 'images/man-2.png' %}" alt="slide 1">
+                                <h4>Expert Instructors</h4>
+                                <p>We rigorously screen and train our instructors ensure that they meet </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="single-feature">
+                                <img src="{% static 'images/clock.png' %}" alt="slide 1">
+                                <h4>Lifetime Access</h4>
+                                <p>We rigorously screen and train our instructors ensure that they meet </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="single-feature">
+                                <img src="{% static 'images/pc.png' %}" alt="slide 1">
+                                <h4>Learn Anywhere</h4>
+                                <p>We rigorously screen and train our instructors ensure that they meet </p>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="single-feature">
+                                <a href="#" class="btn-small">Get Started For Free</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="course-1x">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="title-middle">
+                    <h2>Webacademia Top Courses</h2>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div id="filters" class="course-menu">
+                    <button class="filter active" data-filter="all">All Courses</button>
+
+                    {% for category in categories|slice:":5" %}
+                        <button class="filter" data-rel="{{ category.slug }}"
+                                data-filter=".{{ category.slug }}">{{ category.name }}</button>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="all-course">
+                    <div class="row">
+                        {% for course in courses|slice:":8" %}
+                            <div class="col-md-3 tile {{ course.category.slug }}">
+                                <div class="single-course">
+                                    <div class="hvrbox">
+                                        <img src="{{ course.thumbnail.url }}" alt="slide 1"
+                                             class="hvrbox-layer_bottom">
+                                        <div class="hvrbox-layer_top hvrbox-text">
+                                            <div class="hvrbox-text">
+                                                <a href="{{ course.video.url }}"
+                                                   class="btn-circle video"><i class="fas fa-play"></i></a>
+                                                <a href="course-single-one.html">Preview Course</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="single-course-content">
+                                        <a href="course-single-one.html">{{ course.title }}</a>
+                                        <p>{{ course.teacher }} <span><del>$169</del> <b>$149</b></span></p>
+                                        <h3>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i> (4)
+                                            <span>Enrolled: {{ course.purchased }}</span>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+
+                        <div class="col-md-12 text-center">
+                            <a href="{% url 'courses' %}" class="btn-small"> View more </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="achive-goals-1x">
+    <div class="container">
+        <div class="col-md-12">
+            <div class="title-middle">
+                <h2>Achieve Your Goals</h2>
+                <p>Find subjects you're passionate about by browsing our online course categories. Start <br> learning
+                    with top courses Built With Industry Experts</p>
+            </div>
+        </div>
+
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="single-goals">
+                        <img src="{% static 'images/icon-1.png' %}" alt="slide 1">
+                        <h4>Develope Skill</h4>
+                        <p>These goals will assist them in achieving their ultimate career position </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="single-goals">
+                        <img src="{% static 'images/icon-2.png' %}" alt="slide 1">
+                        <h4>Learning Community</h4>
+                        <p>These goals will assist them in achieving their ultimate career position </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="single-goals">
+                        <img src="{% static 'images/icon-4.png' %}" alt="slide 1">
+                        <h4>Real Life Project</h4>
+                        <p>These goals will assist them in achieving their ultimate career position </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="learning-path-1x">
+    <div class="container">
+        <div class="col-md-12">
+            <div class="title-middle">
+                <h2>Get Ahead With Learning Paths</h2>
+            </div>
+        </div>
+
+        <div class="col-md-12">
+            <div class="learning-path">
+
+                <div class="single-learning-path">
+                    <div class="hvrbox">
+                        <a href="#"><img src="{% static 'images/1.jpg' %}" alt="slide 1"
+                                         class="hvrbox-layer_bottom"></a>
+                        <div class="hvrbox-layer_top hvrbox-text blue">
+                            <div class="hvrbox-text">
+                                <a href="#">Become a Designer</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-learning-path">
+                    <div class="hvrbox">
+                        <a href="#"><img src="{% static 'images/2.jpg' %}" alt="slide 1"
+                                         class="hvrbox-layer_bottom"></a>
+                        <div class="hvrbox-layer_top hvrbox-text green">
+                            <div class="hvrbox-text">
+                                <a href="#">Become a Developer</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-learning-path">
+                    <div class="hvrbox">
+                        <a href="#"><img src="{% static 'images/3.jpg' %}" alt="slide 1"
+                                         class="hvrbox-layer_bottom"></a>
+                        <div class="hvrbox-layer_top hvrbox-text red">
+                            <div class="hvrbox-text">
+                                <a href="#">Become a Manager</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-learning-path">
+                    <div class="hvrbox">
+                        <a href="#"><img src="{% static 'images/4.jpg' %}" alt="slide 1"
+                                         class="hvrbox-layer_bottom"></a>
+                        <div class="hvrbox-layer_top hvrbox-text yellow">
+                            <div class="hvrbox-text">
+                                <a href="#">Become a Marketer</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-learning-path">
+                    <div class="hvrbox">
+                        <a href="#"><img src="{% static 'images/5.jpg' %}" alt="slide 1"
+                                         class="hvrbox-layer_bottom"></a>
+                        <div class="hvrbox-layer_top hvrbox-text">
+                            <div class="hvrbox-text">
+                                <a href="#">Design Introduction</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="tesimonial-1x">
+    <div class="container">
+        <div class="col-md-10 offset-md-1">
+            <div class="testimonial">
+                <div class="single-testimonial text-center">
+                    <img src="{% static 'images/testimonial-1.jpg' %}" alt="slide 1">
+                    <p><i class="fas fa-quote-left"></i> Before Coursecity, I was working two minimum wage jobs. Now, I
+                        have a new job, a new mindset,<br> and new life!"I learned most of my programming skills and
+                        database management skills <br> through self-study and the material available on Coursecity.</p>
+                    <h3>Stephanie Magion</h3>
+                    <h4>Manager at Doltef</h4>
+                </div>
+
+                <div class="single-testimonial text-center">
+                    <img src="{% static 'images/testimonial-2.jpg' %}" alt="slide 1">
+                    <p><i class="fas fa-quote-left"></i> Before Coursecity, I was working two minimum wage jobs. Now, I
+                        have a new job, a new mindset,<br> and new life!"I learned most of my programming skills and
+                        database management skills <br> through self-study and the material available on Coursecity.</p>
+                    <h3>Jhon Alex</h3>
+                    <h4>Chairman at Doltef</h4>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="client-1x">
+    <div class="container">
+        <div class="col-md-12">
+            <div class="title-middle">
+                <h2>Train Your Company Member</h2>
+                <p>Find subjects you're passionate about by browsing our online course categories. Start <br> learning
+                    with top courses Built With Industry Experts</p>
+            </div>
+        </div>
+
+        <div class="col-md-8 offset-md-2">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="single-client">
+                        <a href="#"><img src="{% static 'images/client/1.png' %}" alt="slide 1"></a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="single-client">
+                        <a href="#"><img src="{% static 'images/client/2.png' %}" alt="slide 1"></a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="single-client">
+                        <a href="#"><img src="{% static 'images/client/5.png' %}" alt="slide 1"></a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="single-client">
+                        <a href="#"><img src="{% static 'images/client/4.png' %}" alt="slide 1"></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="single-client">
+                        <a href="#"><img src="{% static 'images/client/4.png' %}" alt="slide 1"></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="single-client">
+                        <a href="#"><img src="{% static 'images/client/1.png' %}" alt="slide 1"></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="single-client">
+                        <a href="#"><img src="{% static 'images/client/2.png' %}" alt="slide 1"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="cta-1x">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="cta-content">
+                    <h3>Ready to Begin?</h3>
+                    <p>Find subjects you're passionate about by browsing our online course categories. Start <br>
+                        learning with top courses Built With Industry Experts.</p>
+                    <a href="#" class="btn-small">Start Teaching</a>
+                    <a href="#" class="btn-small">Start Learning</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer-section-1x">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="footer-top">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="footer-top-right">
+                                <img src="{% static 'images/logo.png' %}" alt="slide 1">
+                                <p>All of our website templates are <br>offered as is, we do not offer any <br>
+                                    guarantee or warranty.</p>
+                                <ul>
+                                    <li>+91 258 458 754</li>
+                                    <li>meditrust@info.com</li>
+                                </ul>
+
+                                <div class="footer-social-link">
+                                    <ul>
+                                        <li><a href="#"> <i class="fab fa-facebook-f"></i> </a></li>
+                                        <li><a href="#"> <i class="fab fa-instagram"></i> </a></li>
+                                        <li><a href="#"> <i class="fab fa-twitter"></i> </a></li>
+                                        <li><a href="#"> <i class="fab fa-google-plus-g"></i> </a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-8">
+                            <div class="footer-top-left">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="single-link">
+                                            <h3>Company</h3>
+                                            <ul>
+                                                <li><a href="#"> About Company </a></li>
+                                                <li><a href="#"> Feature Course </a></li>
+                                                <li><a href="#"> Careers </a></li>
+                                                <li><a href="#"> Contact Us </a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="single-link">
+                                            <h3>Help Links</h3>
+                                            <ul>
+                                                <li><a href="#"> Student Support </a></li>
+                                                <li><a href="#"> Course Policy </a></li>
+                                                <li><a href="#"> Register Activation Key </a></li>
+                                                <li><a href="#"> System Requirements </a></li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="single-link">
+                                            <h3>Course</h3>
+                                            <ul>
+                                                <li><a href="#"> Wordpress Development </a></li>
+                                                <li><a href="#"> Design & Photography </a></li>
+                                                <li><a href="#"> Learning English </a></li>
+                                                <li><a href="#"> Javascript Essential </a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 offset-md-4">
+                                        <div class="footer-subscriber">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="Enter Your Email"
+                                                       aria-label="Recipient's username">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-subscriber" type="button"><i
+                                                            class="far fa-paper-plane"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <p>© <a href="#">BanyanTheme</a> All Rights Reserved </p>
+                </div>
+                <div class="col-md-7">
+                    <ul>
+                        <li><a href="#"> About Company </a></li>
+                        <li><a href="#"> Privacy Policy </a></li>
+                        <li><a href="#"> Help Center </a></li>
+                        <li><a href="#"> Terms </a></li>
+                        <li><a href="#"> Site Map </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/popper.min.js' %}"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<!-- Wow Script -->
+<script src="{% static 'js/wow.min.js' %}"></script>
+<!-- Counter Script -->
+<script src="{% static 'js/waypoints.min.js' %}"></script>
+<script src="{% static 'js/jquery.counterup.min.js' %}"></script>
+<!-- Masonry Portfolio Script -->
+<script src="{% static 'js/jquery.mixitup.min.js' %}"></script>
+<!-- Lightbox js -->
+<script src="{% static 'inc/lightbox/js/jquery.fancybox.pack.js' %}"></script>
+<script src="{% static 'inc/lightbox/js/lightbox.js' %}"></script>
+<!-- loader js-->
+<script src="{% static 'js/fakeLoader.min.js' %}"></script>
+<!-- Scroll bottom to top -->
+<script src="{% static 'js/scrolltopcontrol.js' %}"></script>
+<!-- menu -->
+<script src="{% static 'js/bootstrap-4-navbar.js' %}"></script>
+<!-- youtube popup video -->
+<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+<!-- Testimonial slider Script -->
+<script src="{% static 'slick/slick.min.js' %}"></script>
+<!-- Color switcher js -->
+<script src="{% static 'js/color-switcher.js' %}"></script>
+<!-- Color-switcher-active -->
+<script src="{% static 'js/color-switcher-active.js' %}"></script>
+<!-- Custom script -->
+<script src="{% static 'js/custom.js' %}"></script>
+
 </body>
-</html>
+
+<!-- Mirrored from banyanthemes.com/template/courcity/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Apr 2019 16:24:44 GMT -->
+</html>       
