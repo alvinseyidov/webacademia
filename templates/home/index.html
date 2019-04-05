@@ -283,14 +283,14 @@
                                              class="hvrbox-layer_bottom">
                                         <div class="hvrbox-layer_top hvrbox-text">
                                             <div class="hvrbox-text">
-                                                <a href="{{ course.video.url }}"
-                                                   class="btn-circle video"><i class="fas fa-play"></i></a>
-                                                <a href="course-single-one.html">Preview Course</a>
+                                                <a href="{{ course.get_absolute_url }}"
+                                                   class="btn-circle"><i class="fas fa-play"></i></a>
+                                                <a href="{{ course.get_absolute_url }}">Preview Course</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="single-course-content">
-                                        <a href="course-single-one.html">{{ course.title }}</a>
+                                        <a href="{{ course.get_absolute_url }}">{{ course.title }}</a>
                                         <p>{{ course.teacher }} <span><del>$169</del> <b>$149</b></span></p>
                                         <h3>
                                             <i class="fas fa-star"></i>

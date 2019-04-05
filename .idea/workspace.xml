@@ -2,153 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7eb7b47-9baf-419d-a0a8-719bf84dce67" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/courses/migrations/0008_auto_20190405_0329.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/color/color-switcher.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/animate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/bootstrap-4-navbar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/fakeLoader.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/magnific-popup.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/responsive.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/css/fontawesome-all.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/webfonts/fa-brands-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/webfonts/fa-brands-400.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/webfonts/fa-brands-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/webfonts/fa-brands-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/webfonts/fa-brands-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/webfonts/fa-brands-400d41d.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/webfonts/fa-regular-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/webfonts/fa-regular-400.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/webfonts/fa-regular-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/webfonts/fa-regular-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/webfonts/fa-regular-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/webfonts/fa-regular-400d41d.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/webfonts/fa-solid-900.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/webfonts/fa-solid-900.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/webfonts/fa-solid-900.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/webfonts/fa-solid-900.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/webfonts/fa-solid-900.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/webfonts/fa-solid-900d41d.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/404-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/404.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/about-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/adds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/arrow-left.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/arrow-right-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/arrow-right.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/arrow-top.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/banner-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/banner-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blog-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blog-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blog-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/book.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/cap.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/client/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/client/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/client/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/client/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/client/icon-10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/client/icon-11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/client/icon-12.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/client/icon-13.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/client/icon-7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/client/icon-8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/client/icon-9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/clock-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/clock.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/comment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/comming-soon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/cross.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/cta-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/dot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/down-arrow-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/event-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/event-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/event-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/event-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/event-5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/events-bg-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/events-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/events-bg1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/favicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/footer-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/go-ahed-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/graduation-cap.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/green-cap.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/icon-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/icon-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/icon-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/location.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/male.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/man-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/man-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/man.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/message.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/mobile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/pc-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/pc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/phone.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/play.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/price-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/search.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/speaker-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/speaker-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/speaker-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/speaker-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/speaker-5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/speaker-6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/speaker-7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/speaker-8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/speaker-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/students.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/testimonial-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/testimonial-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/user.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/video-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/inc/lightbox/css/jquery.fancybox.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/inc/lightbox/images/blank.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/inc/lightbox/images/fancybox_loading.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/inc/lightbox/images/fancybox_loading@2x.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/inc/lightbox/images/fancybox_overlay.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/inc/lightbox/images/fancybox_sprite.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/inc/lightbox/images/fancybox_sprite@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/inc/lightbox/js/jquery.fancybox.pack.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/inc/lightbox/js/lightbox.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/bootstrap-4-navbar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/color-switcher-active.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/color-switcher.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/countdown.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/custom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/fakeLoader.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/jquery.counterup.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/jquery.magnific-popup.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/jquery.mixitup.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/map.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/popper.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/scrolltopcontrol.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/waypoints.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/wow.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/slick/slick.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/slick/slick.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/migrations/0002_auto_20190405_2320.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/migrations/0003_auto_20190406_0030.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/courses/course_details.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courses/migrations/0002_course_tutor.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/courses/migrations/0003_course_purchased.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/courses/migrations/0004_auto_20190402_1516.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/courses/migrations/0005_auto_20190402_1530.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/courses/migrations/0006_course_video.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/courses/migrations/0007_auto_20190404_0207.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/courses/migrations/0008_auto_20190405_0329.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/courses/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/courses/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courses/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/courses/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courses/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/courses/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/thumbnails/course/516277-new-programmer-wallpapers-2560x1440-for-tablet.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/thumbnails/course/5b8f9540-5d5e-4c09-b9ee-3058c5975aee.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/thumbnails/course/a-software-engineer-programming-at-the-desk--programmer-and-dev.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/thumbnails/course/eb8e8330-ccdd-491a-8506-c7677f1fdb62.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/videos/Corel_Draw_Dersleri_-_1_-_Başlangıç_RGB_ve_CMYK_Modları.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/videos/Eagles_-_Hotel_California_8D_AUDIO.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/videos/OneRepublic_-_Counting_stars_8D_AUDIO.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/courses/course_detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/courses/courses_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/courses/courses_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/home/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webacademia/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/webacademia/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -188,39 +66,41 @@
     <session id="1519008135">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
+          <entry key="project.closed" value="11" />
           <entry key="project.open.time.46" value="1" />
           <entry key="project.open.time.47" value="1" />
           <entry key="project.open.time.52" value="1" />
           <entry key="project.open.time.54" value="1" />
           <entry key="project.open.time.55" value="1" />
+          <entry key="project.open.time.57" value="1" />
           <entry key="project.open.time.64" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.83" value="1" />
           <entry key="project.open.time.87" value="1" />
           <entry key="project.open.time.91" value="1" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CommandLine" value="231" />
-          <entry key="HTML" value="3095" />
+          <entry key="CommandLine" value="402" />
+          <entry key="HTML" value="4823" />
           <entry key="PLAIN_TEXT" value="37" />
-          <entry key="Python" value="2620" />
+          <entry key="Python" value="3135" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="2" />
-          <entry key="HTML" value="28" />
-          <entry key="Python" value="43" />
+          <entry key="DjangoTemplate" value="1" />
+          <entry key="HTML" value="42" />
+          <entry key="Python" value="54" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -234,6 +114,13 @@
     <findStrings>
       <find>courses</find>
       <find>bcards</find>
+      <find>curre</find>
+      <find>Sort by</find>
+      <find>web</find>
+      <find>video</find>
+      <find>course.v</find>
+      <find>btn-circle v</find>
+      <find>course.vi</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -248,19 +135,21 @@
         <option value="$PROJECT_DIR$/templates/accounts/login.html" />
         <option value="$PROJECT_DIR$/templates/courses/categories.html" />
         <option value="$PROJECT_DIR$/courses/forms.py" />
-        <option value="$PROJECT_DIR$/courses/urls.py" />
-        <option value="$PROJECT_DIR$/courses/views.py" />
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/templates/courses/coursefrom_category.html" />
         <option value="$PROJECT_DIR$/webacademia/urls.py" />
-        <option value="$PROJECT_DIR$/templates/courses/courses_list.html" />
         <option value="$PROJECT_DIR$/templates/courses/course_detail.html" />
         <option value="$PROJECT_DIR$/accounts/views.py" />
-        <option value="$PROJECT_DIR$/webacademia/settings.py" />
         <option value="$PROJECT_DIR$/templates/home/index-2.html" />
         <option value="$PROJECT_DIR$/home/views.py" />
-        <option value="$PROJECT_DIR$/templates/home/index.html" />
+        <option value="$PROJECT_DIR$/templates/courses/course-list.html" />
+        <option value="$PROJECT_DIR$/courses/urls.py" />
+        <option value="$PROJECT_DIR$/courses/views.py" />
+        <option value="$PROJECT_DIR$/webacademia/settings.py" />
+        <option value="$PROJECT_DIR$/templates/courses/courses_list.html" />
+        <option value="$PROJECT_DIR$/templates/courses/course_details.html" />
         <option value="$PROJECT_DIR$/courses/models.py" />
+        <option value="$PROJECT_DIR$/templates/home/index.html" />
       </list>
     </option>
   </component>
@@ -270,7 +159,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="71" />
     <option name="y" value="70" />
     <option name="width" value="1346" />
@@ -301,6 +190,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -313,11 +203,11 @@
         </subPane>
       </pane>
       <pane id="Course" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/tural/Desktop/Github/webacademia/settings.py" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -326,6 +216,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tural\Desktop\Github\templates\courses" />
       <recent name="C:\Users\tural\Desktop\Github\static\css" />
       <recent name="C:\Users\tural\Desktop\Github\static" />
       <recent name="C:\Users\tural\Desktop\Github\templates\home" />
@@ -382,13 +273,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28517398" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21028744" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32903227" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -396,7 +287,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="manage.py@webacademia" order="9" weight="0.32419354" />
+      <window_info anchor="bottom" id="manage.py@webacademia" order="9" weight="0.31451613" />
       <window_info anchor="bottom" id="Database Changes" order="10" weight="0.32903227" />
       <window_info anchor="bottom" id="Educational.CheckDetails" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.3435484" />
@@ -436,24 +327,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/home/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/courses/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/courses/categories.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="80" selection-start-line="10" selection-start-column="80" selection-end-line="10" selection-end-column="80" />
         </state>
       </provider>
     </entry>
@@ -478,39 +355,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/courses/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/courses/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/courses/tests.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/home/models.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/courses/course_detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/courses/courses_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="90" selection-start-line="11" selection-start-column="90" selection-end-line="11" selection-end-column="90" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/accounts/views.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -540,24 +389,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webacademia/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="129" selection-start-line="129" selection-end-line="129" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/home/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/courses/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -571,10 +406,86 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/courses/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="53" lean-forward="true" selection-start-line="6" selection-start-column="53" selection-end-line="6" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../webacademia/venv/Lib/site-packages/django/db/backends/sqlite3/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="295" selection-start-line="295" selection-end-line="295" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webacademia/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="38" column="33" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courses/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#1#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/courses/course_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="90" selection-start-line="11" selection-start-column="90" selection-end-line="11" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/courses/courses_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="330" column="76" selection-start-line="330" selection-start-column="76" selection-end-line="330" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/courses/categories.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="80" selection-start-line="10" selection-start-column="80" selection-end-line="10" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/courses/course_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/home/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="278" column="77" selection-start-line="278" selection-start-column="77" selection-end-line="278" selection-end-column="77" />
+        <state relative-caret-position="248">
+          <caret line="292" column="78" selection-start-line="292" selection-start-column="78" selection-end-line="292" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courses/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="33" column="92" selection-start-line="33" selection-start-column="92" selection-end-line="33" selection-end-column="92" />
+          <folding>
+            <element signature="e#15#68#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/courses/course_details.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="464" column="97" selection-start-line="464" selection-start-column="97" selection-end-line="464" selection-end-column="97" />
         </state>
       </provider>
     </entry>

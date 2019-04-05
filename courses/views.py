@@ -4,15 +4,17 @@ from .models import Course, Category
 
 def courses(request):
     courses_list = Course.objects.all()
+    categories_list = Category.objects.all()
+    return render(request, 'courses/courses_list.html', {'courses': courses_list, 'categories': categories_list})
 
-    return render(request, 'courses/courses_list.html', {'courses': courses_list})
 
-
-def course_detail(request, slug):
+def course_details(request, slug):
     course = get_object_or_404(Course, slug=slug)
+    categories_list = Category.objects.all()
+    courses_list = Course.objects.all()
 
 
-    return render(request, 'courses/course_detail.html', {'course': course})
+    return render(request, 'courses/course_details.html', {'course': course, 'categories': categories_list, 'courses': courses_list})
 
 
 

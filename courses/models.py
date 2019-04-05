@@ -1,8 +1,10 @@
 # coding=utf-8
+from django.contrib.postgres.fields import ArrayField
 from django.db import models
 from django.urls import reverse
 from django.utils.text import slugify
 from django.contrib.auth.models import User
+
 
 
 class Category(models.Model):
@@ -29,10 +31,14 @@ class Category(models.Model):
 
 
 class Course(models.Model):
+    SKILLS = (('Beginner', 'beginner'), ('Intermediate', 'intermediate'), ('Expert', 'expert'))
 
     title = models.CharField(max_length=100, blank=False)
     teacher = models.ForeignKey(User, default=1, on_delete=models.DO_NOTHING)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
+    skill = models.CharField(max_length=12, choices=SKILLS, default='b')
+    description = models.CharField(max_length=200, null=True, blank=False)
+    # whatwillilearn = ArrayField(models.CharField(max_length=200), blank=False, null=False, default='list')
     thumbnail = models.ImageField(upload_to='thumbnails/course/', null=True, blank=False)
     video = models.FileField(upload_to='videos/', null=True, blank=False)
     # publish_date = models.DateTimeField(auto_now_add=True)
