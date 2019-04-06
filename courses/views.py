@@ -2,6 +2,7 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Course, Category
 
+
 def courses(request):
     courses_list = Course.objects.all()
     categories_list = Category.objects.all()
@@ -27,6 +28,7 @@ def categories(request):
 
 def coursefrom_category(request, slug):
     category = get_object_or_404(Category, slug=slug)
+    categories_list = Category.objects.all()
     course = Course.objects.all()
 
-    return render(request, 'courses/coursefrom_category.html', {'category': category, 'courses': course})
+    return render(request, 'courses/coursefrom_category.html', {'category': category, 'categories': categories_list, 'courses': course})

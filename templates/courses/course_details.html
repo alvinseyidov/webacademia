@@ -32,7 +32,7 @@
     <!-- Main CSS -->
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
     <!-- Color CSS -->
-    <link rel="stylesheet" href="{% static 'color/color-switcher.css' %}">
+
     <!-- Responsive CSS -->
     <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
 
@@ -212,7 +212,8 @@
                 <div class="col-md-8">
                     <div class="course-details-left">
 
-                        <div class="course-video" style="background: url({{ course.thumbnail.url }});  background-size: cover; background-repeat: no-repeat; padding: 135px 0; text-align: center; border-radius: 3px;">
+                        <div class="course-video"
+                             style="background: url({{ course.thumbnail.url }});  background-size: cover; background-repeat: no-repeat; padding: 135px 0; text-align: center; border-radius: 3px;">
                             <a href="{{ course.get_absolute_url }}" class="btn-circle"><i
                                     class="fas fa-play"></i></a>
                             <h3>Preview Course</h3>
@@ -247,7 +248,9 @@
                             <div class="tab-content course-menu-tab" id="myTabContent">
                                 <div class="tab-pane fade show active" id="overview" role="tabpanel"
                                      aria-labelledby="overview-tab">
+                                    <!--
                                     <div class="learning-system">
+
                                         <h4>What Will I Learn?</h4>
                                         <p>Learn cutting-edge deep reinforcement learning algorithms—from Deep
                                             Q-Networks (DQN) to Deep Deterministic Policy Gradients (DDPG). Apply these
@@ -313,6 +316,8 @@
                                             apply them in your design. This will be a constant study throughout your
                                             career.</p>
                                     </div>
+                                    -->
+                                    {{ course.description }}
                                     <div class="price">
                                         <h5>
                                             <del>$169</del>
@@ -324,7 +329,13 @@
                                 <div class="tab-pane fade" id="curriculum" role="tabpanel"
                                      aria-labelledby="curriculum-tab">
                                     <div class="learning-system">
+
                                         <h4>What Will I Learn?</h4>
+                                        {% for video in course.video.all %}
+                                            <p>{{ video }}</p>
+                                        {% endfor %}
+
+                                    <!--
                                         <p>Learn cutting-edge deep reinforcement learning algorithms—from Deep
                                             Q-Networks (DQN) to Deep Deterministic Policy Gradients (DDPG). Apply these
                                             concepts to train agents to walk, drive, or perform other complex tasks.</p>
@@ -364,7 +375,9 @@
                                                 </div>
                                             </li>
                                         </ul>
+                                        -->
                                     </div>
+                                    <!--
                                     <div class="requirements">
                                         <h4>Requirements</h4>
                                         <ul>
@@ -389,6 +402,7 @@
                                             apply them in your design. This will be a constant study throughout your
                                             career.</p>
                                     </div>
+                                    -->
                                 </div>
                                 <div class="tab-pane fade" id="instructor" role="tabpanel"
                                      aria-labelledby="instructor-tab">
@@ -556,7 +570,7 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="footer-top-right">
-                                <img src="images/logo.png" alt="slide 1">
+                                <img src="{% static 'images/logo.png' %}" alt="slide 1">
                                 <p>All of our website templates are <br>offered as is, we do not offer any <br>
                                     guarantee or warranty.</p>
                                 <ul>
@@ -684,9 +698,7 @@
 <!-- Testimonial slider Script -->
 <script src="{% static 'slick/slick.min.js' %}"></script>
 <!-- Color switcher js -->
-<script src="{% static 'js/color-switcher.js' %}"></script>
-<!-- Color-switcher-active -->
-<script src="{% static 'js/color-switcher-active.js' %}"></script>
+
 <!-- Custom script -->
 <script src="{% static 'js/custom.js' %}"></script>
 

@@ -9,7 +9,7 @@ from django.contrib.auth.models import User
 
 class Category(models.Model):
     name = models.CharField(max_length=50, blank=False)
-    thumbnail = models.ImageField(upload_to='tgumbnails/category/', null=True, blank=False)
+    thumbnail = models.ImageField(upload_to='thumbnails/category/', null=True, blank=False)
     slug = models.SlugField(editable=False, unique=True, max_length=50)
 
     def __str__(self):
@@ -30,17 +30,30 @@ class Category(models.Model):
         return super(Category, self).save(*args, **kwargs)
 
 
+
+class Videos(models.Model):
+    # course = models.ForeignKey(Course, on_delete=models.CASCADE)
+    name = models.CharField(max_length=100, null=True, blank=False)
+    altname = models.CharField(max_length=100, null=True, blank=False)
+    video = models.FileField(upload_to='videos/', null=True, blank=False)
+
+    def __str__(self):
+        return self.altname
+
+
 class Course(models.Model):
     SKILLS = (('Beginner', 'beginner'), ('Intermediate', 'intermediate'), ('Expert', 'expert'))
 
     title = models.CharField(max_length=100, blank=False)
     teacher = models.ForeignKey(User, default=1, on_delete=models.DO_NOTHING)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
-    skill = models.CharField(max_length=12, choices=SKILLS, default='b')
-    description = models.CharField(max_length=200, null=True, blank=False)
+    skill = models.CharField(max_length=12, choices=SKILLS, default='beginner')
+    price = models.FloatField(default=10, blank=False)
+    description = models.TextField(max_length=2000, null=True, blank=False)
     # whatwillilearn = ArrayField(models.CharField(max_length=200), blank=False, null=False, default='list')
     thumbnail = models.ImageField(upload_to='thumbnails/course/', null=True, blank=False)
-    video = models.FileField(upload_to='videos/', null=True, blank=False)
+    promotion = models.FileField(upload_to='promotions/', null=True, blank=False)
+    video = models.ManyToManyField(Videos)
     # publish_date = models.DateTimeField(auto_now_add=True)
     purchased = models.PositiveIntegerField(default=0)
     slug = models.SlugField(unique=True, editable=False, max_length=120)
@@ -66,3 +79,18 @@ class Course(models.Model):
         self.slug = self.get_unique_slug()
 
         return super(Course, self).save(*args, **kwargs)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
