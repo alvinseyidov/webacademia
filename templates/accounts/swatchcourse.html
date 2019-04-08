@@ -79,10 +79,12 @@
                         </a>
 
                         <!-- Search -->
+                        <!--
                         <form class="search-form d-none d-md-flex">
                             <input type="text" class="form-control" placeholder="Search">
                             <button class="btn" type="button"><i class="material-icons font-size-24pt">search</i></button>
                         </form>
+                        -->
                         <!-- // END Search -->
 
                         <div class="flex"></div>
@@ -263,11 +265,11 @@
 
                     <div class="container-fluid page__container">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="student-dashboard.html">Home</a></li>
-                            <li class="breadcrumb-item"><a href="student-browse-courses.html">Courses</a></li>
-                            <li class="breadcrumb-item active">The MVC architectural pattern</li>
+                            <li class="breadcrumb-item"><a href="{% url 'profile' username=user.username%}">Profile</a></li>
+                            <li class="breadcrumb-item"><a href="{% url 'mycourses' username=user.username %}">My Courses</a></li>
+                            <li class="breadcrumb-item active">{{ course.title }}</li>
                         </ol>
-                        <h1 class="h2">The MVC architectural pattern</h1>
+                        <h1 class="h2">{{ course.title }}</h1>
                         <div class="row">
                             <div class="col-md-8">
                                 <div class="card">
@@ -275,25 +277,27 @@
                                         <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/97243285?title=0&amp;byline=0&amp;portrait=0" allowfullscreen=""></iframe>
                                     </div>
                                     <div class="card-body">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dicta eius enim inventoreus optio ratione veritatis. Beatae deserunt illum ipsam magniima mollitia officiis quia tempora!
+                                        {{ course.description }}
                                     </div>
                                 </div>
 
                                 <!-- Lessons -->
-                                <ul class="card list-group list-group-fit">
+                                <ul class="card list-group list-group-fit">{% for video in course.video.all %}
                                     <li class="list-group-item">
                                         <div class="media">
                                             <div class="media-left">
-                                                <div class="text-muted">1.</div>
+                                                <div class="text-muted">{{ video.place }}.</div>
                                             </div>
                                             <div class="media-body">
-                                                <a href="#">Installation</a>
+                                                <a href="#">{{ video.name }}</a>
                                             </div>
                                             <div class="media-right">
                                                 <small class="text-muted-light">2:03</small>
                                             </div>
+
                                         </div>
-                                    </li>
+                                    </li>{% endfor %}
+
                                     <li class="list-group-item active">
                                         <div class="media">
                                             <div class="media-left">
@@ -373,16 +377,16 @@
                                     <div class="card-header">
                                         <div class="media align-items-center">
                                             <div class="media-left">
-                                                <img src="assets/images/people/110/guy-6.jpg" alt="About Adrian" width="50" class="rounded-circle">
+                                                <img src="{{ course.teacher.profile.photo.url }}" alt="{{ course.teacher.username }}" width="50" class="rounded-circle">
                                             </div>
                                             <div class="media-body">
-                                                <h4 class="card-title"><a href="instructor-profile.html">Adrian Demian</a></h4>
-                                                <p class="card-subtitle">Instructor</p>
+                                                <h4 class="card-title">{{ course.teacher.first_name }} {{ course.teacher.last_name }} <!--<a href="instructor-profile.html"></a>--></h4>
+                                                <p class="card-subtitle">{{ course.teacher.profile.headline }}</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card-body">
-                                        <p>Having over 12 years exp. Adrian is one of the lead UI designers in the industry Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, aut.</p>
+                                        <p>{{ course.teacher.profile.bio }}</p>
                                         <a href="#" class="btn btn-light"><i class="fab fa-facebook"></i></a>
                                         <a href="#" class="btn btn-light"><i class="fab fa-twitter"></i></a>
                                         <a href="#" class="btn btn-light"><i class="fab fa-github"></i></a>
@@ -406,7 +410,7 @@
                                                 <div class="media-left">
                                                     <i class="material-icons text-muted-light">assessment</i>
                                                 </div>
-                                                <div class="media-body">Beginner</div>
+                                                <div class="media-body">{{ course.skill }}</div>
                                             </div>
                                         </li>
                                     </ul>

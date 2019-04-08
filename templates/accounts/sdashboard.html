@@ -250,7 +250,7 @@
 
                 <div class="container-fluid page__container">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="{% url 'profile' username=user.username %}">Home</a></li>
+                        <li class="breadcrumb-item"><a href="{% url 'profile' username=user.username %}">PROFILE</a></li>
                         <li class="breadcrumb-item active">Dashboard</li>
                     </ol>
                     <h1 class="h2">Dashboard</h1>
@@ -315,14 +315,14 @@
 
                                     <li class="list-group-item" style="z-index: initial;">
                                         <div class="d-flex align-items-center">
-                                            <a href="student-take-course.html"
+                                            <a href="{{ course.get_watch_url }}"
                                                class="avatar avatar-4by3 avatar-sm mr-3">
                                                 <img src="{{ course.thumbnail.url }}" alt="course"
                                                      class="avatar-img rounded">
                                             </a>
 
                                             <div class="flex">
-                                                <a href="student-take-course.html" class="text-body"><strong>{{ course.title }}</strong></a>
+                                                <a href="{{ course.get_watch_url }}" class="text-body"><strong>{{ course.title }}</strong></a>
                                                 <div class="d-flex align-items-center">
                                                     <div class="progress" style="width: 100px;">
                                                         <div class="progress-bar bg-primary" role="progressbar"
@@ -339,7 +339,7 @@
                                                 </a>
                                                 <div class="dropdown-menu dropdown-menu-right">
                                                     <a class="dropdown-item"
-                                                       href="student-take-course.html">Continue</a>
+                                                       href="{{ course.get_watch_url }}">Continue</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -568,7 +568,7 @@
                             <div class="sidebar-heading">APPLICATIONS</div>
                             <ul class="sidebar-menu sm-active-button-bg">
                                 <li class="sidebar-menu-item active">
-                                    <a class="sidebar-menu-button" href="student-dashboard.html">
+                                    <a class="sidebar-menu-button" href="{% url 'profile' username=user.username %}">
                                         <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">account_box</i>Dashboard
                                     </a>
                                 </li>
@@ -591,22 +591,8 @@
                                         {{ user.first_name }} {{ user.last_name }}
                                         <span class="ml-auto sidebar-menu-toggle-icon"></span>
                                     </a>
+
                                     <ul class="sidebar-submenu sm-indent collapse" id="account_menu">
-                                        <li class="sidebar-menu-item">
-                                            <a class="sidebar-menu-button" href="login.html">
-                                                <span class="sidebar-menu-text">Login</span>
-                                            </a>
-                                        </li>
-                                        <li class="sidebar-menu-item">
-                                            <a class="sidebar-menu-button" href="guest-signup.html">
-                                                <span class="sidebar-menu-text">Sign Up</span>
-                                            </a>
-                                        </li>
-                                        <li class="sidebar-menu-item">
-                                            <a class="sidebar-menu-button" href="guest-forgot-password.html">
-                                                <span class="sidebar-menu-text">Forgot Password</span>
-                                            </a>
-                                        </li>
                                         <li class="sidebar-menu-item">
                                             <a class="sidebar-menu-button" href="student-account-edit.html">
                                                 <span class="sidebar-menu-text">Edit Account</span>
@@ -622,6 +608,7 @@
                                                 <span class="sidebar-menu-text">Profile &amp; Privacy</span>
                                             </a>
                                         </li>
+                                        <!--
                                         <li class="sidebar-menu-item">
                                             <a class="sidebar-menu-button"
                                                href="student-account-billing-subscription.html">
@@ -659,6 +646,7 @@
                                                 <span class="sidebar-menu-text">Edit Invoice</span>
                                             </a>
                                         </li>
+                                        -->
                                     </ul>
                                 </li>
                                 <!--

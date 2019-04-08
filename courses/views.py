@@ -28,8 +28,6 @@ def watch(request, slug):
     return render(request, 'accounts/swatchcourse.html', {'user': user, 'course': course, 'videos': videos})
 
 
-
-
 def categories(request):
     category = Category.objects.all()
 

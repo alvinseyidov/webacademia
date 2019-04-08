@@ -1,10 +1,11 @@
 
 # coding=utf-8
-from django.contrib.postgres.fields import ArrayField
+# from django.contrib.postgres.fields import ArrayField
 from django.db import models
 from django.urls import reverse
 from django.utils.text import slugify
 from django.contrib.auth.models import User
+
 
 
 class Category(models.Model):
@@ -36,9 +37,26 @@ class Videos(models.Model):
     name = models.CharField(max_length=100, null=True, blank=False)
     altname = models.CharField(max_length=100, null=True, blank=False)
     video = models.FileField(upload_to='videos/', null=True, blank=False)
+    place = models.PositiveIntegerField(default=1, blank=False)
+    videoslug = models.SlugField(unique=True, editable=False, max_length=3, null=True)
+    # duration = models.DurationField(help_text='duration', null=True)
+
 
     def __str__(self):
-        return self.altname
+        return self.altname + str(self.place)
+
+
+    def get_unique_slug(self):
+        videoslug = slugify(self.place)
+        return videoslug
+    
+    def save(self, *args, **kwargs):
+        self.videoslug = self.get_unique_slug()
+        
+        return super(Videos, self).save(*args, **kwargs)
+        
+
+
 
 
 class Course(models.Model):
