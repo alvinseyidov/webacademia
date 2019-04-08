@@ -144,7 +144,7 @@
                     <h3>{{ course.title }}</h3>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="#">{{ course.category }}</a></li>
+                            <li class="breadcrumb-item"><a href="{{ course.category.get_absolute_url }}">{{ course.category }}</a></li>
                             <li class="breadcrumb-item active" aria-current="page">{{ course.title }}</li>
                         </ol>
                     </nav>
@@ -161,10 +161,10 @@
                 <div class="col-md-4">
                     <div class="course-info-left">
                         <div class="media">
-                            <img src="{% static 'images/testimonial-1.jpg' %}" alt="Image">
+                            <img src="{{ course.teacher.profile.photo.url }}" alt="Image">
                             <div class="media-body">
-                                <h3>{{ course.teacher }}</h3>
-                                <p>Visual Instructor</p>
+                                <h3>{{ course.teacher.first_name }} {{ course.teacher.last_name }}</h3>
+                                <p>{{ course.teacher.profile.headline }}</p>
                             </div>
                         </div>
                     </div>
@@ -195,8 +195,7 @@
                 <div class="col-md-3">
                     <div class="course-info-right">
                         <h3>
-                            <del>$59</del>
-                            $169
+                            <del>$169</del>${{ course.price }}
                         </h3>
                         <a href="#" class="btn-small">Buy Now</a>
                     </div>
@@ -317,11 +316,12 @@
                                             career.</p>
                                     </div>
                                     -->
+                                    <h4>What will i learn?</h4>
                                     {{ course.description }}
                                     <div class="price">
                                         <h5>
                                             <del>$169</del>
-                                            <span>$139</span></h5>
+                                            <span>${{ course.price }}</span></h5>
                                         <a href="#" class="btn-small">Buy Now</a>
                                     </div>
 
@@ -330,9 +330,9 @@
                                      aria-labelledby="curriculum-tab">
                                     <div class="learning-system">
 
-                                        <h4>What Will I Learn?</h4>
+                                        <h4>Course Content</h4><br>
                                         {% for video in course.video.all %}
-                                            <p>{{ video }}</p>
+                                            <h3><a href="{{ video.video.url }}">{{ video.name }}</a></h3>
                                         {% endfor %}
 
                                     <!--
@@ -408,15 +408,13 @@
                                      aria-labelledby="instructor-tab">
                                     <div class="blog-author instructor-profile">
                                         <div class="media">
-                                            <img src="{% static 'images/speaker-1.png' %}"
+                                            <img src="{{ course.teacher.profile.photo.url }}"
                                                  alt="Generic placeholder image">
                                             <div class="media-body">
-                                                <h5>Dr. Stavens Madison</h5>
-                                                <p>He attended and graduated from medical school in 1976, having over 42
-                                                    years of diverse experience, especially in Cardiovascular Disease
-                                                    (Cardiology).</p>
+                                                <h5>{{ course.teacher.first_name }} {{ course.teacher.last_name }}</h5>
+                                                <p>{{ course.teacher.profile.bio }}</p>
                                                 <div class="social-link">
-                                                    <ul>
+                                                    <ul><!--
                                                         <li class="facebook"><a href="#"> <i
                                                                 class="fab fa-facebook-f"></i> </a></li>
                                                         <li class="pinterest"><a href="#"> <i
@@ -424,7 +422,7 @@
                                                         <li class="instagram"><a href="#"> <i
                                                                 class="fab fa-instagram"></i> </a></li>
                                                         <li class="twitter"><a href="#"> <i class="fab fa-twitter"></i>
-                                                        </a></li>
+                                                        </a></li> -->
                                                     </ul>
                                                 </div>
                                             </div>

@@ -1,10 +1,10 @@
+
 # coding=utf-8
 from django.contrib.postgres.fields import ArrayField
 from django.db import models
 from django.urls import reverse
 from django.utils.text import slugify
 from django.contrib.auth.models import User
-
 
 
 class Category(models.Model):
@@ -63,6 +63,9 @@ class Course(models.Model):
 
     def get_absolute_url(self):
         return reverse('course_detail', args=[str(self.slug)])
+
+    def get_watch_url(self):
+        return reverse('watch', args=[str(self.slug)])
 
 
     def get_unique_slug(self):

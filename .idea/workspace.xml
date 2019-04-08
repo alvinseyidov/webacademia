@@ -2,30 +2,165 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7eb7b47-9baf-419d-a0a8-719bf84dce67" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/courses/migrations/0003_auto_20190406_1902.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/migrations/0005_auto_20190406_2019.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/migrations/0006_auto_20190406_2319.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/migrations/0002_auto_20190407_1147.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/migrations/0003_auto_20190407_1150.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/migrations/0004_auto_20190407_1151.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/css/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/css/app.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/css/bootstrap-touchspin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/css/bootstrap-touchspin.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/css/dropzone.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/css/dropzone.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/css/fancytree.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/css/fancytree.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/css/flatpickr-airbnb.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/css/flatpickr-airbnb.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/css/flatpickr.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/css/flatpickr.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/css/fontawesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/css/fontawesome.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/css/fullcalendar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/css/jvectormap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/css/material-icons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/css/material-icons.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/css/morris.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/css/nestable.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/css/nestable.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/css/quill.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/css/quill.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/css/summernote.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/css/summernote.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/css/sweetalert.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/data/vector-maps/custom/jquery-jvectormap-de-merc-en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/data/vector-maps/custom/jquery-jvectormap-es-merc-en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/data/vector-maps/custom/jquery-jvectormap-fr-merc-en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/data/vector-maps/custom/jquery-jvectormap-us-aea-en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/data/vector-maps/custom/jquery-jvectormap-us-lcc-en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/data/vector-maps/custom/jquery-jvectormap-world-mill-en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/data/vector-maps/custom/mall-map.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/data/vector-maps/data/gdp-data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/fonts/fontawesome-free/fa-brands-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/fonts/fontawesome-free/fa-brands-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/fonts/fontawesome-free/fa-brands-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/fonts/fontawesome-free/fa-brands-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/fonts/fontawesome-free/fa-brands-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/fonts/fontawesome-free/fa-brands-400d41d.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/fonts/fontawesome-free/fa-regular-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/fonts/fontawesome-free/fa-regular-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/fonts/fontawesome-free/fa-regular-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/fonts/fontawesome-free/fa-regular-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/fonts/fontawesome-free/fa-regular-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/fonts/fontawesome-free/fa-regular-400d41d.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/fonts/fontawesome-free/fa-solid-900.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/fonts/fontawesome-free/fa-solid-900.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/fonts/fontawesome-free/fa-solid-900.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/fonts/fontawesome-free/fa-solid-900.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/fonts/fontawesome-free/fa-solid-900.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/fonts/fontawesome-free/fa-solid-900d41d.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/fonts/material-icons/MaterialIcons-Regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/fonts/material-icons/MaterialIcons-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/fonts/material-icons/MaterialIcons-Regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/fonts/material-icons/MaterialIcons-Regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/1280_rsz_aman-dhakal-205796-unsplash.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/256_rsz_90-jiang-640827-unsplash.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/256_rsz_clem-onojeghuo-150467-unsplash.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/256_rsz_florian-perennes-594195-unsplash.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/256_rsz_james-gillespie-714755-unsplash.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/256_rsz_karl-s-973833-unsplash.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/256_rsz_nicolas-horn-689011-unsplash.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/256_rsz_sharina-mae-agellon-377466-unsplash.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/github.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/gulp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/logo/primary.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/logo/white.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/nodejs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/people/110/guy-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/people/110/guy-8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/people/110/guy-9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/people/110/woman-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/people/50/guy-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/people/50/guy-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/people/50/guy-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/people/50/guy-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/people/50/woman-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/people/50/woman-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/people/50/woman-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/people/50/woman-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/stories/256_rsz_phil-hearing-769014-unsplash.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/stories/256_rsz_ross-sneddon-798476-unsplash.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/stories/256_rsz_thomas-russell-751613-unsplash.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/visa.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/vuejs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/app-icons.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/app-settings.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/chartjs-rounded-bar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/chartjs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/check-selected-row.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/countdown.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/dragula.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/fancytree.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/flatpickr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/fullcalendar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/hljs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/messages.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/nestable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/page.instructor-dashboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/page.instructor-earnings.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/page.student-dashboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/page.ui-charts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/quill.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/settings.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/summernote.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/sweetalert.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/toggle-check-all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/touchspin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/vector-maps.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/vendor/Chart.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/vendor/dom-factory.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/vendor/dragula/dragula.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/vendor/dragula/dragula.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/vendor/dropzone.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/vendor/dropzone.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/vendor/flatpickr/flatpickr.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/vendor/fullcalendar.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/vendor/jquery-jvectormap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/vendor/jquery.bootstrap-touchspin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/vendor/jquery.countdown.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/vendor/jquery.fancytree-all.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/vendor/jquery.jvectormap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/vendor/jquery.mask.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/vendor/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/vendor/jquery.nestable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/vendor/list.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/vendor/material-design-kit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/vendor/moment-range.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/vendor/moment.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/vendor/perfect-scrollbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/vendor/perfect-scrollbar.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/vendor/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/vendor/quill.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/vendor/summernote.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/vendor/sweetalert.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/vendor/vue.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/accounts/sdashboard.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/accounts/smycourses.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/accounts/swatchcourse.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courses/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/courses/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courses/migrations/0002_auto_20190405_2320.py" beforeDir="false" afterPath="$PROJECT_DIR$/courses/migrations/0002_auto_20190406_1902.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courses/migrations/0003_auto_20190406_0030.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/courses/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/courses/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courses/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/courses/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/courses/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/courses/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/tgumbnails/category/20170301155447.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/tgumbnails/category/20170301155447_jvxSvLE.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/tgumbnails/category/2d671bac-495f-4be0-b740-2b9164574750.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/tgumbnails/category/2d671bac-495f-4be0-b740-2b9164574750_KLNjEuK.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/tgumbnails/category/54272234-aeb7b300-459c-11e9-9547-9633ec15e51c.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/tgumbnails/category/54272234-aeb7b300-459c-11e9-9547-9633ec15e51c_gBQBEph.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/tgumbnails/category/Big-Data-Verteda-1200x848.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/tgumbnails/category/Big-Data-Verteda-1200x848_KBbF9u5.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/tgumbnails/category/a-software-engineer-programming-at-the-desk--programmer-and-dev.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/tgumbnails/category/a-software-engineer-programming-at-the-desk--programmer-and-dev_RrptD6a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/thumbnails/course/man-programmer-working-on-computer-260nw-1080697565.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/accounts/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/accounts/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/courses/course_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/courses/course_details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/courses/coursefrom_category.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/courses/coursefrom_category.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/courses/courses_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/courses/courses_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/home/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -66,7 +201,8 @@
     <session id="1519008135">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="13" />
+          <entry key="project.closed" value="14" />
+          <entry key="project.open.time.101" value="1" />
           <entry key="project.open.time.46" value="1" />
           <entry key="project.open.time.47" value="1" />
           <entry key="project.open.time.52" value="1" />
@@ -76,33 +212,36 @@
           <entry key="project.open.time.63" value="1" />
           <entry key="project.open.time.64" value="1" />
           <entry key="project.open.time.69" value="1" />
+          <entry key="project.open.time.70" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.83" value="1" />
           <entry key="project.open.time.87" value="1" />
           <entry key="project.open.time.91" value="1" />
-          <entry key="project.opened" value="13" />
+          <entry key="project.opened" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CommandLine" value="479" />
-          <entry key="HTML" value="5838" />
-          <entry key="PLAIN_TEXT" value="63" />
-          <entry key="Python" value="4000" />
+          <entry key="CommandLine" value="568" />
+          <entry key="HTML" value="8936" />
+          <entry key="PLAIN_TEXT" value="65" />
+          <entry key="Python" value="6152" />
+          <entry key="SQL" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="2" />
           <entry key="DjangoTemplate" value="1" />
-          <entry key="HTML" value="48" />
-          <entry key="Python" value="62" />
+          <entry key="HTML" value="61" />
+          <entry key="JavaScript" value="1" />
+          <entry key="Python" value="98" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -114,22 +253,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>courses</find>
-      <find>bcards</find>
-      <find>curre</find>
-      <find>Sort by</find>
-      <find>web</find>
-      <find>video</find>
-      <find>course.v</find>
-      <find>btn-circle v</find>
-      <find>course.vi</find>
-      <find>curri</find>
-      <find>color</find>
-      <find>eyal</find>
-      <find>slice</find>
-      <find>169</find>
       <find>Remo</find>
       <find>Sort</find>
+      <find>tes</find>
+      <find>Inst</find>
+      <find>curriculum</find>
+      <find>course.category</find>
+      <find>all</find>
+      <find>play</find>
+      <find>desc</find>
+      <find>Compo</find>
+      <find>Instructor</find>
+      <find>Bro</find>
+      <find>My</find>
+      <find>Learn</find>
+      <find>My</find>
+      <find>Messages</find>
+      <find>Account</find>
+      <find>Get</find>
+      <find>Log</find>
+      <find>Courses</find>
+      <find>far fa-envelope</find>
+      <find>Get S</find>
+      <find>Top</find>
+      <find>169</find>
+      <find>Weba</find>
+      <find>Conti</find>
+      <find>wat</find>
+      <find>dash</find>
+      <find>Student</find>
+      <find>Forum</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -139,26 +292,32 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/home/urls.py" />
-        <option value="$PROJECT_DIR$/accounts/urls.py" />
-        <option value="$PROJECT_DIR$/templates/accounts/login.html" />
         <option value="$PROJECT_DIR$/templates/courses/categories.html" />
         <option value="$PROJECT_DIR$/courses/forms.py" />
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/webacademia/urls.py" />
         <option value="$PROJECT_DIR$/templates/courses/course_detail.html" />
-        <option value="$PROJECT_DIR$/accounts/views.py" />
         <option value="$PROJECT_DIR$/templates/home/index-2.html" />
-        <option value="$PROJECT_DIR$/home/views.py" />
         <option value="$PROJECT_DIR$/templates/courses/course-list.html" />
-        <option value="$PROJECT_DIR$/courses/urls.py" />
         <option value="$PROJECT_DIR$/webacademia/settings.py" />
         <option value="$PROJECT_DIR$/courses/admin.py" />
-        <option value="$PROJECT_DIR$/templates/courses/course_details.html" />
-        <option value="$PROJECT_DIR$/templates/home/index.html" />
-        <option value="$PROJECT_DIR$/courses/models.py" />
-        <option value="$PROJECT_DIR$/courses/views.py" />
         <option value="$PROJECT_DIR$/templates/courses/courses_list.html" />
         <option value="$PROJECT_DIR$/templates/courses/coursefrom_category.html" />
+        <option value="$PROJECT_DIR$/accounts/admin.py" />
+        <option value="$PROJECT_DIR$/accounts/models.py" />
+        <option value="$PROJECT_DIR$/templates/courses/course_details.html" />
+        <option value="$PROJECT_DIR$/templates/accounts/sdashboard.html" />
+        <option value="$PROJECT_DIR$/templates/accounts/guest-login.html" />
+        <option value="$PROJECT_DIR$/templates/accounts/login.html" />
+        <option value="$PROJECT_DIR$/home/views.py" />
+        <option value="$PROJECT_DIR$/templates/home/index.html" />
+        <option value="$PROJECT_DIR$/accounts/urls.py" />
+        <option value="$PROJECT_DIR$/accounts/views.py" />
+        <option value="$PROJECT_DIR$/courses/urls.py" />
+        <option value="$PROJECT_DIR$/templates/accounts/smycourses.html" />
+        <option value="$PROJECT_DIR$/courses/models.py" />
+        <option value="$PROJECT_DIR$/courses/views.py" />
+        <option value="$PROJECT_DIR$/templates/accounts/swatchcourse.html" />
       </list>
     </option>
   </component>
@@ -210,8 +369,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Course" />
       <pane id="Scope" />
+      <pane id="Course" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -225,9 +384,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tural\Desktop\Github\templates\accounts" />
+      <recent name="C:\Users\tural\Desktop\Github\static" />
       <recent name="C:\Users\tural\Desktop\Github\templates\courses" />
       <recent name="C:\Users\tural\Desktop\Github\static\css" />
-      <recent name="C:\Users\tural\Desktop\Github\static" />
       <recent name="C:\Users\tural\Desktop\Github\templates\home" />
     </key>
   </component>
@@ -284,7 +444,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21633889" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22239032" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -296,7 +456,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="manage.py@webacademia" order="9" visible="true" weight="0.16612904" />
+      <window_info anchor="bottom" id="manage.py@webacademia" order="9" weight="0.2580645" />
       <window_info anchor="bottom" id="Database Changes" order="10" weight="0.32903227" />
       <window_info anchor="bottom" id="Educational.CheckDetails" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.3435484" />
@@ -322,13 +482,6 @@
     <entry file="file://$PROJECT_DIR$/accounts/migrations/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/accounts/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="18" lean-forward="true" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/courses/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -343,27 +496,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="54" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/courses/tests.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/home/models.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/admin.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/static/color/color-switcher.css">
@@ -374,24 +510,10 @@
     <entry file="file://$PROJECT_DIR$/static/css/style.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/webacademia/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="25" column="39" lean-forward="true" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/home/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="91" selection-start-line="7" selection-start-column="91" selection-end-line="7" selection-end-column="91" />
         </state>
       </provider>
     </entry>
@@ -422,47 +544,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-          <folding>
-            <element signature="e#1#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/home/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="291" column="78" selection-start-line="291" selection-start-column="78" selection-end-line="291" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/courses/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="53" lean-forward="true" selection-start-line="6" selection-start-column="53" selection-end-line="6" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/courses/course_details.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/courses/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="40" column="27" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
-          <folding>
-            <element signature="e#15#68#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/courses/courses_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7">
-          <caret line="282" column="43" selection-start-line="282" selection-start-column="39" selection-end-line="282" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -473,20 +554,139 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/courses/views.py">
+    <entry file="file://$PROJECT_DIR$/courses/migrations/0004_videos_name.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="68">
+          <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/courses/courses_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="331" column="58" selection-start-line="331" selection-start-column="58" selection-end-line="331" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/courses/course_details.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="318" column="58" selection-start-line="318" selection-start-column="58" selection-end-line="318" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/assets/js/app.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webacademia/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="25" column="39" lean-forward="true" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/accounts/sdashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="313" column="160" selection-start-line="313" selection-start-column="160" selection-end-line="313" selection-end-column="160" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/accounts/loginn.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/accounts/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="65" column="37" selection-start-line="65" selection-start-column="37" selection-end-line="65" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/home/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="292" column="105" selection-start-line="292" selection-start-column="105" selection-end-line="292" selection-end-column="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="8" column="53" lean-forward="true" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="79" selection-start-line="8" selection-start-column="79" selection-end-line="8" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courses/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="67" column="29" selection-start-line="67" selection-start-column="29" selection-end-line="67" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="46" column="46" lean-forward="true" selection-start-line="46" selection-start-column="46" selection-end-line="46" selection-end-column="46" />
           <folding>
-            <element signature="e#1#55#0" expanded="true" />
-            <element signature="e#356#622#0" />
-            <element signature="e#655#769#0" />
+            <element signature="e#1#65#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/courses/migrations/0004_videos_name.py">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/templates/accounts/swatchcourse.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="231" column="149" selection-start-line="231" selection-start-column="149" selection-end-line="231" selection-end-column="149" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/accounts/smycourses.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="214" column="46" lean-forward="true" selection-start-line="214" selection-start-column="46" selection-end-line="214" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courses/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="23" column="65" selection-start-line="23" selection-start-column="65" selection-end-line="23" selection-end-column="65" />
+          <folding>
+            <element signature="e#1#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courses/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+          <folding>
+            <element signature="e#1#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

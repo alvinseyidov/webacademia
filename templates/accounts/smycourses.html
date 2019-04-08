@@ -1,0 +1,578 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+
+<!-- Mirrored from learnplus-bootstrap.frontendmatter.com/student-my-courses.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Apr 2019 16:36:25 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{{ user.first_name }} {{ user.last_name }} - Courses | Webacademia</title>
+
+
+    <!-- Perfect Scrollbar -->
+    <link type="text/css" href="{% static 'assets/vendor/perfect-scrollbar.css' %}" rel="stylesheet">
+
+    <!-- Material Design Icons -->
+    <link type="text/css" href="{% static 'assets/css/material-icons.css' %}" rel="stylesheet">
+    <link type="text/css" href="{% static 'assets/css/material-icons.rtl.css' %}" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link type="text/css" href="{% static 'assets/css/fontawesome.css' %}" rel="stylesheet">
+    <link type="text/css" href="{% static 'assets/css/fontawesome.rtl.css' %}" rel="stylesheet">
+
+    <!-- App CSS -->
+    <link type="text/css" href="{% static 'assets/css/app.css' %}" rel="stylesheet">
+    <link type="text/css" href="{% static 'assets/css/app.rtl.css' %}" rel="stylesheet">
+
+
+</head>
+
+<body class=" layout-fluid">
+
+
+<div class="preloader">
+    <div class="sk-double-bounce">
+        <div class="sk-child sk-double-bounce1"></div>
+        <div class="sk-child sk-double-bounce2"></div>
+    </div>
+</div>
+
+<!-- Header Layout -->
+<div class="mdk-header-layout js-mdk-header-layout">
+
+    <!-- Header -->
+
+    <div id="header" data-fixed class="mdk-header js-mdk-header mb-0">
+        <div class="mdk-header__content">
+
+            <!-- Navbar -->
+            <nav id="default-navbar" class="navbar navbar-expand navbar-dark bg-primary m-0">
+                <div class="container-fluid">
+                    <!-- Toggle sidebar -->
+                    <button class="navbar-toggler d-block" data-toggle="sidebar" type="button">
+                        <span class="material-icons">menu</span>
+                    </button>
+
+                    <!-- Brand -->
+                    <a href="{% url 'home' %}" class="navbar-brand">
+                        <img src="{% static 'assets/images/logo/white.svg' %}" class="mr-2" alt="Webacademia"/>
+                        <span class="d-none d-xs-md-block">Webacademia</span>
+                    </a>
+
+                    <!-- Search -->
+                    <form class="search-form d-none d-md-flex">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <button class="btn" type="button"><i class="material-icons font-size-24pt">search</i></button>
+                    </form>
+                    <!-- // END Search -->
+
+                    <div class="flex"></div>
+
+                    <!-- Menu -->
+                    <!--
+                    <ul class="nav navbar-nav flex-nowrap d-none d-lg-flex">
+                        <li class="nav-item">
+                            <a class="nav-link" href="student-forum.html">Forum</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="student-help-center.html">Get Help</a>
+                        </li>
+                    </ul>
+                    -->
+
+                    <!-- Menu -->
+                    <ul class="nav navbar-nav flex-nowrap">
+                        <!--
+                        <li class="nav-item d-none d-md-flex">
+                            <a href="student-cart.html" class="nav-link">
+                                <i class="material-icons">shopping_cart</i>
+                            </a>
+                        </li>
+                        -->
+
+
+                        <!-- Notifications dropdown -->
+                        <!--
+                        <li class="nav-item dropdown dropdown-notifications dropdown-menu-sm-full">
+                            <button class="nav-link btn-flush dropdown-toggle" type="button" data-toggle="dropdown"
+                                    data-dropdown-disable-document-scroll data-caret="false">
+                                <i class="material-icons">notifications</i>
+                                <span class="badge badge-notifications badge-danger">2</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <div data-perfect-scrollbar class="position-relative">
+                                    <div class="dropdown-header"><strong>Messages</strong></div>
+                                    <div class="list-group list-group-flush mb-0">
+
+                                        <a href="student-messages.html"
+                                           class="list-group-item list-group-item-action unread">
+                                                <span class="d-flex align-items-center mb-1">
+                                                    <small class="text-muted">5 minutes ago</small>
+
+                                                    <span class="ml-auto unread-indicator bg-primary"></span>
+
+                                                </span>
+                                            <span class="d-flex">
+                                                    <span class="avatar avatar-xs mr-2">
+                                                        <img src="assets/images/people/110/woman-5.jpg" alt="people"
+                                                             class="avatar-img rounded-circle">
+                                                    </span>
+                                                    <span class="flex d-flex flex-column">
+                                                        <strong>Michelle</strong>
+                                                        <span class="text-black-70">Clients loved the new design.</span>
+                                                    </span>
+                                                </span>
+                                        </a>
+
+                                        <a href="student-messages.html"
+                                           class="list-group-item list-group-item-action unread">
+                                                <span class="d-flex align-items-center mb-1">
+                                                    <small class="text-muted">5 minutes ago</small>
+
+                                                    <span class="ml-auto unread-indicator bg-primary"></span>
+
+                                                </span>
+                                            <span class="d-flex">
+                                                    <span class="avatar avatar-xs mr-2">
+                                                        <img src="assets/images/people/110/woman-5.jpg" alt="people"
+                                                             class="avatar-img rounded-circle">
+                                                    </span>
+                                                    <span class="flex d-flex flex-column">
+                                                        <strong>Michelle</strong>
+                                                        <span class="text-black-70">🔥 Superb job..</span>
+                                                    </span>
+                                                </span>
+                                        </a>
+
+                                    </div>
+
+                                    <div class="dropdown-header"><strong>System notifications</strong></div>
+                                    <div class="list-group list-group-flush mb-0">
+
+                                        <a href="student-messages.html"
+                                           class="list-group-item list-group-item-action border-left-3 border-left-danger">
+                                                <span class="d-flex align-items-center mb-1">
+                                                    <small class="text-muted">3 minutes ago</small>
+
+                                                </span>
+                                            <span class="d-flex">
+                                                    <span class="avatar avatar-xs mr-2">
+                                                        <span class="avatar-title rounded-circle bg-light">
+                                                            <i class="material-icons font-size-16pt text-danger">account_circle</i>
+                                                        </span>
+                                                    </span>
+                                                    <span class="flex d-flex flex-column">
+
+                                                        <span class="text-black-70">Your profile information has not been synced correctly.</span>
+                                                    </span>
+                                                </span>
+                                        </a>
+
+                                        <a href="student-messages.html" class="list-group-item list-group-item-action">
+                                                <span class="d-flex align-items-center mb-1">
+                                                    <small class="text-muted">5 hours ago</small>
+
+                                                </span>
+                                            <span class="d-flex">
+                                                    <span class="avatar avatar-xs mr-2">
+                                                        <span class="avatar-title rounded-circle bg-light">
+                                                            <i class="material-icons font-size-16pt text-success">group_add</i>
+                                                        </span>
+                                                    </span>
+                                                    <span class="flex d-flex flex-column">
+                                                        <strong>Adrian. D</strong>
+                                                        <span class="text-black-70">Wants to join your private group.</span>
+                                                    </span>
+                                                </span>
+                                        </a>
+
+                                        <a href="student-messages.html" class="list-group-item list-group-item-action">
+                                                <span class="d-flex align-items-center mb-1">
+                                                    <small class="text-muted">1 day ago</small>
+
+                                                </span>
+                                            <span class="d-flex">
+                                                    <span class="avatar avatar-xs mr-2">
+                                                        <span class="avatar-title rounded-circle bg-light">
+                                                            <i class="material-icons font-size-16pt text-warning">storage</i>
+                                                        </span>
+                                                    </span>
+                                                    <span class="flex d-flex flex-column">
+
+                                                        <span class="text-black-70">Your deploy was successful.</span>
+                                                    </span>
+                                                </span>
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        -->
+                        <!-- // END Notifications dropdown -->
+                        <!-- User dropdown -->
+                        <li class="nav-item dropdown ml-1 ml-md-3">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"><img
+                                    src="{{ user.profile.photo.url }}" alt="Avatar" class="rounded-circle"
+                                    width="40"></a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" href="student-account-edit.html">
+                                    <i class="material-icons">edit</i> Edit Account
+                                </a>
+                                <a class="dropdown-item" href="student-profile.html">
+                                    <i class="material-icons">person</i> Public Profile
+                                </a>
+                                <a class="dropdown-item" href="login.html">
+                                    <i class="material-icons">lock</i> Logout
+                                </a>
+                            </div>
+                        </li>
+                        <!-- // END User dropdown -->
+
+                    </ul>
+                    <!-- // END Menu -->
+                </div>
+            </nav>
+            <!-- // END Navbar -->
+
+        </div>
+    </div>
+
+    <!-- // END Header -->
+
+    <!-- Header Layout Content -->
+    <div class="mdk-header-layout__content">
+
+        <div data-push data-responsive-width="992px" class="mdk-drawer-layout js-mdk-drawer-layout">
+            <div class="mdk-drawer-layout__content page ">
+
+                <div class="container-fluid page__container">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="{% url 'profile' username=user.username %}">Home</a></li>
+                        <li class="breadcrumb-item active">My Courses</li>
+                    </ol>
+                    <div class="media mb-headings align-items-center">
+                        <div class="media-body">
+                            <h1 class="h2">My Courses</h1>
+                        </div>
+                        <!--
+                        <div class="media-right">
+                            <div class="btn-group btn-group-sm">
+                                <a href="#" class="btn btn-white active"><i class="material-icons">list</i></a>
+                                <a href="#" class="btn btn-white"><i class="material-icons">dashboard</i></a>
+                            </div>
+                        </div>
+                        -->
+                    </div>
+                    <div class="card-columns">
+                        {% for course in user.profile.purchasedcourses.all %}
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <a href="{{ course.get_watch_url }}">
+                                                <img src="{{ course.thumbnail.url }}" alt="Card image cap" width="100"
+                                                     class="rounded">
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 class="card-title m-0"><a href="{{ course.get_watch_url }}">{{ course.title }}</a></h4>
+                                            <small class="text-muted">Lessons: 3 of 7</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="progress rounded-0">
+                                    <div class="progress-bar progress-bar-striped bg-primary" role="progressbar"
+                                         style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="card-footer bg-white">
+                                    <a href="{{ course.get_watch_url }}" class="btn btn-primary btn-sm">Continue <i
+                                            class="material-icons btn__icon--right">play_circle_outline</i></a>
+                                </div>
+                            </div>
+                        {% endfor %}
+
+                    </div>
+
+
+                    <!-- Pagination -->
+                    <!--
+                    <ul class="pagination justify-content-center pagination-sm">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true" class="material-icons">chevron_left</span>
+                                <span>Prev</span>
+                            </a>
+                        </li>
+                        <li class="page-item active">
+                            <a class="page-link" href="#" aria-label="1">
+                                <span>1</span>
+                            </a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="1">
+                                <span>2</span>
+                            </a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span>Next</span>
+                                <span aria-hidden="true" class="material-icons">chevron_right</span>
+                            </a>
+                        </li>
+                    </ul>
+                    -->
+                </div>
+
+            </div>
+
+
+            <div class="mdk-drawer js-mdk-drawer" id="default-drawer">
+                <div class="mdk-drawer__content ">
+                    <div class="sidebar sidebar-left sidebar-dark bg-dark o-hidden" data-perfect-scrollbar>
+                        <div class="sidebar-p-y">
+                            <div class="sidebar-heading">APPLICATIONS</div>
+                            <ul class="sidebar-menu sm-active-button-bg">
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="{% url 'profile' username=user.username %}">
+                                        <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">account_box</i>
+                                        Dashboard
+                                    </a>
+                                </li>
+                                <!--
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="instructor-dashboard.html">
+                                        <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">school</i>
+                                        Instructor
+                                    </a>
+                                </li>
+                                -->
+                            </ul>
+                            <!-- Account menu -->
+                            <div class="sidebar-heading">Account</div>
+                            <ul class="sidebar-menu">
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button sidebar-js-collapse" data-toggle="collapse"
+                                       href="#account_menu">
+                                        <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">person_outline</i>
+                                        {{ user.first_name }} {{ user.last_name }}
+                                        <span class="ml-auto sidebar-menu-toggle-icon"></span>
+                                    </a>
+                                    <ul class="sidebar-submenu sm-indent collapse" id="account_menu">
+
+                                        <li class="sidebar-menu-item">
+                                            <a class="sidebar-menu-button" href="student-account-edit.html">
+                                                <span class="sidebar-menu-text">Edit Account</span>
+                                            </a>
+                                        </li>
+                                        <li class="sidebar-menu-item">
+                                            <a class="sidebar-menu-button" href="student-account-edit-basic.html">
+                                                <span class="sidebar-menu-text">Basic Information</span>
+                                            </a>
+                                        </li>
+                                        <li class="sidebar-menu-item">
+                                            <a class="sidebar-menu-button" href="student-account-edit-profile.html">
+                                                <span class="sidebar-menu-text">Profile &amp; Privacy</span>
+                                            </a>
+                                        </li>
+                                        <!--
+                                        <li class="sidebar-menu-item">
+                                            <a class="sidebar-menu-button"
+                                               href="student-account-billing-subscription.html">
+                                                <span class="sidebar-menu-text">Subscription</span>
+                                            </a>
+                                        </li>
+                                        <li class="sidebar-menu-item">
+                                            <a class="sidebar-menu-button" href="student-account-billing-upgrade.html">
+                                                <span class="sidebar-menu-text">Upgrade Account</span>
+                                            </a>
+                                        </li>
+                                        <li class="sidebar-menu-item">
+                                            <a class="sidebar-menu-button"
+                                               href="student-account-billing-payment-information.html">
+                                                <span class="sidebar-menu-text">Payment Information</span>
+                                            </a>
+                                        </li>
+                                        <li class="sidebar-menu-item">
+                                            <a class="sidebar-menu-button" href="student-billing.html">
+                                                <span class="sidebar-menu-text">Payment History</span>
+                                            </a>
+                                        </li>
+                                        <li class="sidebar-menu-item">
+                                            <a class="sidebar-menu-button" href="student-invoice.html">
+                                                <span class="sidebar-menu-text">Student Invoice</span>
+                                            </a>
+                                        </li>
+                                        <li class="sidebar-menu-item">
+                                            <a class="sidebar-menu-button" href="instructor-invoice.html">
+                                                <span class="sidebar-menu-text">Instructor Invoice</span>
+                                            </a>
+                                        </li>
+                                        <li class="sidebar-menu-item">
+                                            <a class="sidebar-menu-button" href="instructor-edit-invoice.html">
+                                                <span class="sidebar-menu-text">Edit Invoice</span>
+                                            </a>
+                                        </li>
+                                        -->
+                                    </ul>
+                                </li>
+                                <!--
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" data-toggle="collapse" href="#messages_menu">
+                                        <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">comment</i>
+                                        Messages
+                                        <span class="ml-auto sidebar-menu-toggle-icon"></span>
+                                    </a>
+                                    <ul class="sidebar-submenu sm-indent collapse" id="messages_menu">
+                                        <li class="sidebar-menu-item">
+                                            <a class="sidebar-menu-button" href="student-messages.html">
+                                                <span class="sidebar-menu-text">Conversation</span>
+                                                <span class="sidebar-menu-badge badge badge-primary badge-notifications ml-auto">2</span>
+                                            </a>
+                                        </li>
+                                        <li class="sidebar-menu-item">
+                                            <a class="sidebar-menu-button" href="student-messages-2.html">
+                                                <span class="sidebar-menu-text">Conversation - 2</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                -->
+                            </ul>
+                            <div class="sidebar-heading">Student</div>
+                            <ul class="sidebar-menu sm-active-button-bg">
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="{% url 'courses' %}">
+                                        <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">search</i>
+                                        Browse Courses
+                                    </a>
+                                </li>
+                                <!--
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="student-take-course.html">
+                                        <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">class</i>
+                                        Take Course
+                                        <span class="sidebar-menu-badge badge badge-primary ml-auto">PRO</span>
+                                    </a>
+                                </li>
+
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="student-take-quiz.html">
+                                        <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">dvr</i> Take
+                                        a Quiz
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="student-quiz-results.html">
+                                        <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">poll</i>
+                                        Quiz Results
+                                    </a>
+                                </li>
+                                -->
+                                <li class="sidebar-menu-item active">
+                                    <a class="sidebar-menu-button" href="{% url 'mycourses' username=user.username %}">
+                                        <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">school</i>
+                                        My Courses ({{ user.profile.purchasedcourses.count }})
+                                    </a>
+                                </li>
+                                <!--
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" data-toggle="collapse" href="#forum_menu">
+                                        <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">chat_bubble_outline</i>
+                                        Community
+                                        <span class="ml-auto sidebar-menu-toggle-icon"></span>
+                                    </a>
+                                    <ul class="sidebar-submenu sm-indent collapse" id="forum_menu">
+                                        <li class="sidebar-menu-item">
+                                            <a class="sidebar-menu-button" href="student-forum.html">
+                                                <span class="sidebar-menu-text">Forum</span>
+                                            </a>
+                                        </li>
+                                        <li class="sidebar-menu-item">
+                                            <a class="sidebar-menu-button" href="student-forum-thread.html">
+                                                <span class="sidebar-menu-text">Discussion</span>
+                                            </a>
+                                        </li>
+                                        <li class="sidebar-menu-item">
+                                            <a class="sidebar-menu-button" href="student-forum-ask.html">
+                                                <span class="sidebar-menu-text">Ask Question</span>
+                                            </a>
+                                        </li>
+                                        <li class="sidebar-menu-item">
+                                            <a class="sidebar-menu-button" href="student-profile.html">
+                                                <span class="sidebar-menu-text">Student Profile - Courses</span>
+                                            </a>
+                                        </li>
+                                        <li class="sidebar-menu-item">
+                                            <a class="sidebar-menu-button" href="student-profile-posts.html">
+                                                <span class="sidebar-menu-text">Student Profile - Posts</span>
+                                            </a>
+                                        </li>
+                                        <li class="sidebar-menu-item">
+                                            <a class="sidebar-menu-button" href="instructor-profile.html">
+                                                <span class="sidebar-menu-text">Instructor Profile</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                -->
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="#">
+                                        <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">live_help</i>
+                                        Get Help
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="{% url 'logout' %}">
+                                        <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">lock_open</i>
+                                        Logout
+                                    </a>
+                                </li>
+                            </ul>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+</div>
+
+
+<!-- jQuery -->
+<script src="{% static 'assets/vendor/jquery.min.js' %}"></script>
+
+<!-- Bootstrap -->
+<script src="{% static 'assets/vendor/popper.min.js' %}"></script>
+<script src="{% static 'assets/vendor/bootstrap.min.js' %}"></script>
+
+<!-- Perfect Scrollbar -->
+<script src="{% static 'assets/vendor/perfect-scrollbar.min.js' %}"></script>
+
+<!-- MDK -->
+<script src="{% static 'assets/vendor/dom-factory.js' %}"></script>
+<script src="{% static 'assets/vendor/material-design-kit.js' %}"></script>
+
+<!-- App JS -->
+<script src="{% static 'assets/js/app.js' %}"></script>
+
+<!-- Highlight.js -->
+<script src="{% static 'assets/js/hljs.js' %}"></script>
+
+<!-- App Settings (safe to remove) -->
+<script src="{% static 'assets/js/app-settings.js' %}"></script>
+
+
+</body>
+
+
+<!-- Mirrored from learnplus-bootstrap.frontendmatter.com/student-my-courses.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Apr 2019 16:36:27 GMT -->
+</html>

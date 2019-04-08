@@ -1,6 +1,7 @@
 
 from django.shortcuts import render, get_object_or_404
 from .models import Course, Category
+from accounts.models import User
 
 
 def courses(request):
@@ -19,6 +20,16 @@ def course_details(request, slug):
 
 
 
+def watch(request, slug):
+    user = get_object_or_404(User, username=request.user.username)
+    course = get_object_or_404(Course, slug=slug)
+    videos = Course.video
+
+    return render(request, 'accounts/swatchcourse.html', {'user': user, 'course': course, 'videos': videos})
+
+
+
+
 def categories(request):
     category = Category.objects.all()
 
@@ -32,3 +43,6 @@ def coursefrom_category(request, slug):
     course = Course.objects.all()
 
     return render(request, 'courses/coursefrom_category.html', {'category': category, 'categories': categories_list, 'courses': course})
+
+
+
