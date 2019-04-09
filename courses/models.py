@@ -46,6 +46,10 @@ class Videos(models.Model):
         return self.altname + str(self.place)
 
 
+    # def get_watchvideo_url(self):
+     #   return reverse('watch', args=[str(self.videoslug)])
+
+
     def get_unique_slug(self):
         videoslug = slugify(self.place)
         return videoslug

@@ -27,7 +27,8 @@
     <link type="text/css" href="{% static 'assets/css/app.rtl.css' %}" rel="stylesheet">
 
 
-
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.5.2/plyr.css" />
+    <script src="https://cdn.plyr.io/3.5.2/plyr.js"></script>
 
 
 
@@ -274,7 +275,8 @@
                             <div class="col-md-8">
                                 <div class="card">
                                     <div class="embed-responsive embed-responsive-16by9">
-                                        <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/97243285?title=0&amp;byline=0&amp;portrait=0" allowfullscreen=""></iframe>
+                                        <video autoplay controls controlsList="nodownload" class="embed-responsive-item" src="{% if video.video %}{{ video.video.url }}{% endif %} {% if not video.video %}{{ course.promotion.url }}{% endif %}"></video>
+
                                     </div>
                                     <div class="card-body">
                                         {{ course.description }}
@@ -289,7 +291,7 @@
                                                 <div class="text-muted">{{ video.place }}.</div>
                                             </div>
                                             <div class="media-body">
-                                                <a href="#">{{ video.name }}</a>
+                                                <a href="{% url 'watchvideo' courseslug=course.slug videoslug=video.videoslug %}">{{ video.name }}</a>
                                             </div>
                                             <div class="media-right">
                                                 <small class="text-muted-light">2:03</small>

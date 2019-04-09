@@ -1,7 +1,8 @@
 
 from django.shortcuts import render, get_object_or_404
-from .models import Course, Category
+from .models import Course, Category, Videos
 from accounts.models import User
+from django.contrib.auth.decorators import login_required
 
 
 def courses(request):
@@ -19,13 +20,22 @@ def course_details(request, slug):
     return render(request, 'courses/course_details.html', {'course': course, 'categories': categories_list, 'courses': courses_list})
 
 
-
+@login_required(login_url='/login/')
 def watch(request, slug):
     user = get_object_or_404(User, username=request.user.username)
     course = get_object_or_404(Course, slug=slug)
     videos = Course.video
 
     return render(request, 'accounts/swatchcourse.html', {'user': user, 'course': course, 'videos': videos})
+
+@login_required(login_url='/login/')
+def watchvideo(request, courseslug, videoslug):
+    user = get_object_or_404(User, username=request.user.username)
+    course = get_object_or_404(Course, slug=courseslug)
+    videos = Course.video
+    video = get_object_or_404(Videos, videoslug=videoslug)
+
+    return render(request, 'accounts/swatchcourse.html', {'user': user, 'course': course, 'videos': videos, 'video': video})
 
 
 def categories(request):
