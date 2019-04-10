@@ -51,7 +51,7 @@ class Videos(models.Model):
 
 
     def get_unique_slug(self):
-        videoslug = slugify(self.place)
+        videoslug = slugify(self.place)+slugify(self.altname)
         return videoslug
     
     def save(self, *args, **kwargs):

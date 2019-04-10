@@ -141,13 +141,15 @@
                 <div class="overlay-text text-center">
                     <h3><b>2,579</b> Online Course & Video Tutorials!</h3>
                     <div class="col-md-8 offset-md-2">
-                        <div class="input-group">
-                            <input type="text" class="form-control" aria-label="Text input with dropdown button"
-                                   placeholder="Enter Your Search Here">
-                            <div class="input-group-append">
-                                <button class="btn btn-search" type="button"><i class="fas fa-search"></i></button>
+                        <form method="GET">
+                            <div class="input-group">
+                                <input name="search" type="text" class="form-control" aria-label="Text input with dropdown button"
+                                       placeholder="Enter Your Search Here">
+                                <div class="input-group-append">
+                                    <button class="btn btn-search" type="submit"><i class="fas fa-search"></i></button>
+                                </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
