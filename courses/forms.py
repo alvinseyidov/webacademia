@@ -8,3 +8,4 @@ class LevelsForm(forms.ModelForm):
 
     class MEta:
         model = Course
+
