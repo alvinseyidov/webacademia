@@ -4,6 +4,7 @@ from .models import Course, Category, Videos
 from accounts.models import User
 from django.contrib.auth.decorators import login_required
 
+# courses
 
 def courses(request):
     courses_list = Course.objects.all()
@@ -19,6 +20,7 @@ def course_details(request, slug):
 
     return render(request, 'courses/course_details.html', {'course': course, 'categories': categories_list, 'courses': courses_list})
 
+# watch courses
 
 @login_required(login_url='/login/')
 def watch(request, slug):
@@ -37,6 +39,8 @@ def watchvideo(request, courseslug, videoslug):
 
     return render(request, 'accounts/swatchcourse.html', {'user': user, 'course': course, 'videos': videos, 'video': video})
 
+
+# categories
 
 def categories(request):
     category = Category.objects.all()

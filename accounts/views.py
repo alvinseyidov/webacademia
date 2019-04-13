@@ -5,6 +5,7 @@ from django.contrib.auth import login, logout, authenticate
 from django.contrib.auth.decorators import login_required
 from .models import User
 
+# login logout & signup
 
 def login_view(request):
     if request.user.is_authenticated:
@@ -32,6 +33,12 @@ def logout_view(request):
     return redirect('home')
 
 
+def signup(request):
+    return render(request, 'accounts/signup.html')
+
+
+# profile
+
 @login_required(login_url='/login/')
 def profile(request, username):
     user = get_object_or_404(User, username=username)
@@ -39,6 +46,7 @@ def profile(request, username):
         return redirect('home')
 
     return render(request, 'accounts/sdashboard.html', {'user': user})
+
 
 
 @login_required(login_url='/login/')
