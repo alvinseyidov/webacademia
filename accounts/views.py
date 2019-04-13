@@ -1,9 +1,10 @@
 
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.forms import AuthenticationForm
+from .forms import SignupForm
 from django.contrib.auth import login, logout, authenticate
 from django.contrib.auth.decorators import login_required
-from .models import User
+from .models import User, Profile
 
 # login logout & signup
 
@@ -34,7 +35,31 @@ def logout_view(request):
 
 
 def signup(request):
-    return render(request, 'accounts/signup.html')
+    if request.user.is_authenticated:
+        return redirect('profile', username=request.user.username)
+
+    if request.method == 'POST':
+        form = SignupForm(request.POST)
+        if form.is_valid():
+            user = form.save(commit=False)
+            # username = form.cleaned_data.get('username')
+            # email = form.cleaned_data.get('email')
+            # password1 = form.cleaned_data.get('password1')
+            # password2 = form.cleaned_data.get('password2')
+            user.save()
+            Profile.objects.create(user=user)
+
+            raw_username = form.cleaned_data.get('username')
+            raw_password = form.cleaned_data.get('password1')
+            user = authenticate(username=raw_username, password=raw_password)
+            login(request, user)
+            return redirect('profile', username=user.username)
+
+
+    else:
+        form = SignupForm()
+
+    return render(request, 'accounts/signup.html', {'form': form})
 
 
 # profile
@@ -56,37 +81,3 @@ def mycourses(request, username):
         return redirect('home')
 
     return render(request, 'accounts/smycourses.html', {'user': user})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

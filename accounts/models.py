@@ -7,7 +7,7 @@ class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
 
     purchasedcourses = models.ManyToManyField(Course)
-    photo = models.ImageField(upload_to='profilephotos', blank=False)
+    photo = models.ImageField(default='profilephotos/default.png', upload_to='profilephotos', blank=False)
     headline = models.CharField(max_length=30, null=True, blank=False)
     bio = models.TextField(max_length=400, null=True, blank=False)
 
