@@ -58,9 +58,6 @@ class Videos(models.Model):
         self.videoslug = self.get_unique_slug()
         
         return super(Videos, self).save(*args, **kwargs)
-        
-
-
 
 
 class Course(models.Model):
