@@ -20,6 +20,16 @@ def course_details(request, slug):
 
     return render(request, 'courses/course_details.html', {'course': course, 'categories': categories_list, 'courses': courses_list})
 
+
+def coursefrom_category(request, slug):
+    category = get_object_or_404(Category, slug=slug)
+    categories_list = Category.objects.all()
+    course = Course.objects.all()
+
+    return render(request, 'courses/coursefrom_category.html', {'category': category, 'categories': categories_list, 'courses': course})
+
+
+
 # watch courses
 
 @login_required(login_url='/login/')
@@ -40,21 +50,8 @@ def watchvideo(request, courseslug, videoslug):
     return render(request, 'accounts/swatchcourse.html', {'user': user, 'course': course, 'videos': videos, 'video': video})
 
 
-# categories
-
-def categories(request):
-    category = Category.objects.all()
-
-    return render(request, 'courses/categories.html', {'categories': category})
 
 
-
-def coursefrom_category(request, slug):
-    category = get_object_or_404(Category, slug=slug)
-    categories_list = Category.objects.all()
-    course = Course.objects.all()
-
-    return render(request, 'courses/coursefrom_category.html', {'category': category, 'categories': categories_list, 'courses': course})
 
 
 
