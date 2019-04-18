@@ -5,6 +5,7 @@ from .forms import SignupForm
 from django.contrib.auth import login, logout, authenticate
 from django.contrib.auth.decorators import login_required
 from .models import User, Profile
+from courses.models import Course
 
 # login logout & signup
 
@@ -81,3 +82,14 @@ def mycourses(request, username):
         return redirect('home')
 
     return render(request, 'accounts/smycourses.html', {'user': user})
+
+
+login_required(login_url='/login/')
+def addtocart(request, slug):
+    course = get_object_or_404(Course)
+    user = request.user
+    user.profile.cart.add(course)
+
+
+
+

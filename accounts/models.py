@@ -6,7 +6,7 @@ from courses.models import Course
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
 
-    card = models.ManyToManyField(Course, related_name='card')
+    cart = models.ManyToManyField(Course, related_name='cart')
     purchasedcourses = models.ManyToManyField(Course)
     photo = models.ImageField(default='profilephotos/default.png', upload_to='profilephotos', blank=False)
     headline = models.CharField(max_length=30, null=True, blank=False)
