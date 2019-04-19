@@ -85,10 +85,12 @@ def mycourses(request, username):
 
 
 login_required(login_url='/login/')
-def addtocart(request, slug):
-    course = get_object_or_404(Course)
+def addtocart(request, courseslug):
+    course = get_object_or_404(Course, slug=courseslug)
     user = request.user
     user.profile.cart.add(course)
+
+    return render(request, 'courses/course_details.html', {'course': course})
 
 
 

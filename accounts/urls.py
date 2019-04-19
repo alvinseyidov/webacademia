@@ -8,4 +8,5 @@ urlpatterns = [
     path('signup/', views.signup, name='signup'),
     path('users/<str:username>/', views.profile, name='profile'),
     path('users/<str:username>/mycourses/', views.mycourses, name='mycourses'),
+    # path('addtocart/courseslug/', views.addtocart, name='addtocart'),
 ]
