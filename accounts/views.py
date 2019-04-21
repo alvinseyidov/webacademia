@@ -89,13 +89,15 @@ def cart(request, username):
 
     return render(request, 'accounts/scart.html', {'user': user})
 
+
+@login_required(login_url='/login/')
 def addtocart(request, slug):
     user = request.user
     course = get_object_or_404(Course, slug=slug)
-    user.profile.cart.add(course)
+    if course not in user.profile.purchasedcourses.all():
+        user.profile.cart.add(course)
 
     return redirect(course.get_absolute_url())
-
 
 
 

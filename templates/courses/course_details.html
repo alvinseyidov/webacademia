@@ -196,7 +196,15 @@
                         <h3>
                             <del>$169</del>${{ course.price }}
                         </h3>
-                        <a href="#" class="btn-small">Buy Now</a>
+                        {% if course not in request.user.profile.cart.all and course not in request.user.profile.purchasedcourses.all %}
+                            <a href="{% url 'addtocart' slug=course.slug %}" class="btn-small">Add to cart</a>
+                        {% endif %}
+                        {% if course in request.user.profile.cart.all %}
+                            <a href="{% url 'cart' username=request.user.username %}" class="btn-small">Pay now</a>
+                        {% endif %}
+                        {% if course in request.user.profile.purchasedcourses.all %}
+                            <a href="{{ course.get_watch_url }}" class="btn-small">Watch</a>
+                        {% endif %}
                     </div>
                 </div>
 
@@ -321,7 +329,16 @@
                                         <h5>
                                             <del>$169</del>
                                             <span>${{ course.price }}</span></h5>
-                                        <a href="#" class="btn-small">Buy Now</a>
+                                        {% if course not in request.user.profile.cart.all and course not in request.user.profile.purchasedcourses.all %}
+                                            <a href="{% url 'addtocart' slug=course.slug %}" class="btn-small">Add to cart</a>
+                                        {% endif %}
+                                        {% if course in request.user.profile.cart.all %}
+                                            <a href="{% url 'cart' username=request.user.username %}" class="btn-small">Pay now</a>
+                                        {% endif %}
+                                        {% if course in request.user.profile.purchasedcourses.all %}
+                                            <a href="{{ course.get_watch_url }}" class="btn-small">Watch</a>
+                                        {% endif %}
+
 
                                     </div>
 
