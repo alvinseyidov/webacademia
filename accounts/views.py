@@ -84,6 +84,9 @@ def mycourses(request, username):
     return render(request, 'accounts/smycourses.html', {'user': user})
 
 
+
+# cart
+
 def cart(request, username):
     user = get_object_or_404(User, username=username)
 
@@ -98,6 +101,15 @@ def addtocart(request, slug):
         user.profile.cart.add(course)
 
     return redirect(course.get_absolute_url())
+
+
+@login_required(login_url='/login/')
+def remove_from_cart(request, slug):
+    user = request.user
+    course = get_object_or_404(Course, slug=slug)
+    user.profile.cart.remove(course)
+
+    return redirect('cart', username=user.username)
 
 
 
