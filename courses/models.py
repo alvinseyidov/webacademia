@@ -19,14 +19,20 @@ class Category(models.Model):
     def get_absolute_url(self):
         return reverse('coursefrom_category', args=[str(self.slug)])
 
+    @property
     def get_unique_slug(self):
         slug = slugify(
-            self.name.replace('ı', 'i').replace('ə', 'e').replace('ö', 'o').replace('ğ', 'g').replace('ç', 'c').replace('ş', 's'))
+            self.name.replace('ı', 'i').
+                replace('ə', 'e').
+                replace('ö', 'o').
+                replace('ğ', 'g').
+                replace('ç', 'c').
+                replace('ş', 's'))
 
         return slug
 
     def save(self, *args, **kwargs):
-        self.slug = self.get_unique_slug()
+        self.slug = self.get_unique_slug
 
         return super(Category, self).save(*args, **kwargs)
 
@@ -88,7 +94,12 @@ class Course(models.Model):
 
 
     def get_unique_slug(self):
-        slug = slugify(self.title.replace('ı', 'i').replace('ə', 'e').replace('ö', 'o').replace('ğ', 'g').replace('ç', 'c').replace('ş', 's'))
+        slug = slugify(self.title.replace('ı', 'i').
+                       replace('ə', 'e').
+                       replace('ö', 'o').
+                       replace('ğ', 'g').
+                       replace('ç', 'c').
+                       replace('ş', 's'))
         unique_slug = slug
         counter = 1
         while Course.objects.filter(slug=unique_slug).exists():
