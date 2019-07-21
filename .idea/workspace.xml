@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c7eb7b47-9baf-419d-a0a8-719bf84dce67" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courses/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/courses/models.py" afterDir="false" />
-    </list>
+    <list default="true" id="c7eb7b47-9baf-419d-a0a8-719bf84dce67" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -244,16 +241,17 @@
       <workItem from="1555971108748" duration="567000" />
       <workItem from="1555999211877" duration="585000" />
       <workItem from="1560616865261" duration="484000" />
+      <workItem from="1560620694042" duration="45000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61197000" />
+    <option name="totallyTimeSpent" value="61242000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22844176" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2322239" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
